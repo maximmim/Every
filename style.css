@@ -1,0 +1,84 @@
+.struktur1 {
+    display: none;
+}
+
+#hed {
+    position: absolute;
+    top: 44px;
+    left: 35px;
+    height: -102px;
+    width: 123px;
+    padding: 41px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+  
+    
+}
+
+#hed1 {
+    position: absolute;
+    top: 44px;
+    left: 273px;
+    width: 120px;
+    height: 445px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    
+}
+
+#hed2 {
+    position: absolute;
+    top: 137px;
+    left: 44px;
+    width: 208px;
+    height: 347px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+}
+
+#hed3 {
+    position: absolute;
+    top: 496px;
+    left: 43px;
+    height: -102px;
+    width: -40px;
+    padding: 175px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+}
+
+
+#hed {
+    position: absolute;
+    top: 44px;
+    left: 51px;
+    height: -102px;
+    width: 116px;
+    padding: 41px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+}
+
+
+#hed {
+    position: absolute;
+    top: 44px;
+    left: 51px;
+    height: -102px;
+    width: 116px;
+    padding: 41px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+}
+
+#hed {
+    position: absolute;
+    top: 44px;
+    left: 51px;
+    height: -102px;
+    width: 116px;
+    padding: 41px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+}
+
