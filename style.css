@@ -1,7 +1,57 @@
-.struktur1 {
+#struktur1 {
     display: none;
-}
+    position: absolute;
+    top: -30px;
+    left: -10px;
 
+}
+#oa {
+    position: absolute;
+    left: 115px;
+    top: 509px;
+    width: 189px;
+    height: 60px;
+    font-size: 30px;
+    display: block;
+
+}
+#faw {
+    position: absolute;
+    left: 110px;
+    top: 100px;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+#daw {
+    position: absolute;
+    left: 29%;
+    top: 174px;
+    display: block;
+}
+#te {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+
+
+}
+#af {
+    position: absolute;
+    font-size: 25px;
+    left: 30px;
+    top: 10px;
+}
+.oy {
+    /*background-color: rgb(0, 0, 0);*/
+}
 #hed {
     position: absolute;
     top: 44px;
@@ -11,10 +61,16 @@
     padding: 41px;
     border-radius: 9px;
     background: rgb(0, 0, 0);
-  
-    
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
+    background-size: -320px -347px;
+    background-image: url(icon/Dino\ -\ Google\ Chrome\ 22.03.2022\ 21_34_17.png);
 }
-
+#dwa {
+    display: block;
+}
 #hed1 {
     position: absolute;
     top: 44px;
@@ -23,7 +79,10 @@
     height: 445px;
     border-radius: 9px;
     background: rgb(0, 0, 0);
-    
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
 }
 
 #hed2 {
@@ -33,9 +92,35 @@
     width: 208px;
     height: 347px;
     border-radius: 9px;
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
     background: rgb(0, 0, 0);
 }
+#home {
+    position: absolute;
+    left: 169px;
+    top: 824px;
+    width: 74px;
+    height: 71px;
+    display: none;
+}    .u {
+    /* … */
+    transition: transform .2s;
+}    .u:hover {
+    transform: scale(1.2);
+}
 
+#add {
+    position: absolute;
+    left: 289px;
+    top: 827px;
+    width: 66px;
+    display: none;
+    height: 62px;
+
+}
 #hed3 {
     position: absolute;
     top: 496px;
@@ -45,40 +130,10 @@
     padding: 175px;
     border-radius: 9px;
     background: rgb(0, 0, 0);
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
+    background-size: 320px 347px;
+    background-image: url(icon/da.jpg);
 }
-
-
-#hed {
-    position: absolute;
-    top: 44px;
-    left: 51px;
-    height: -102px;
-    width: 116px;
-    padding: 41px;
-    border-radius: 9px;
-    background: rgb(0, 0, 0);
-}
-
-
-#hed {
-    position: absolute;
-    top: 44px;
-    left: 51px;
-    height: -102px;
-    width: 116px;
-    padding: 41px;
-    border-radius: 9px;
-    background: rgb(0, 0, 0);
-}
-
-#hed {
-    position: absolute;
-    top: 44px;
-    left: 51px;
-    height: -102px;
-    width: 116px;
-    padding: 41px;
-    border-radius: 9px;
-    background: rgb(0, 0, 0);
-}
-

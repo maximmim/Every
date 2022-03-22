@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylehome.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Every</title>
+    <script>
+        setInterval(function () {
+            $("#nick").text(localStorage.getItem("dw"))
+        },100)
+        function un() {
+            document.location.replace("index.html")
+        }
+    </script>
+</head>
+<body>
+    <img id="avatar" src="/icon/avatar.png">
+    <h1 id="nick">da</h1>
+    <div onclick="un()" id="undo"></div>
+</body>
+</html>

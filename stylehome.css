@@ -1,0 +1,23 @@
+#avatar {
+    position: absolute;
+    left: 151px;
+    top: 7px;
+    width: 100px;
+    height: 100px;
+}
+#nick {
+    position: absolute;
+    top: 100px;
+    left: 37%;
+}
+
+#undo {
+    position: absolute;
+    left: 0px;
+    top: 717px;
+    width: 387px;
+    height: 107px;
+    background: rgb(190,190,190);
+    background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(255,164,0,1) 66%);
+    border-radius: 25px;
+}

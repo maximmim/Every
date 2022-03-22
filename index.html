@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="X-UA-Compatible">
+<html lang="ua">
 <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -7,26 +7,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Every</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+//localStorage.setItem("id", 1)
+//setTimeout(function () {
+//     if (localStorage.getItem("id") == 1)
+// {
+//    document.getElementById("home").style.display = "block"
+//    document.getElementById("struktur1").style.display = "block"
+//    document.getElementById("dwa").style.display = "none"
+//    document.getElementById("add").style.display = "block"
+//}
+//},5000)
+function ceking() 
+{   
+    
+    let inp = document.getElementById("daw").value;
+    localStorage.setItem('dw', inp);
+    alert("Привіт " + inp);
+    document.getElementById("home").style.display = "block"
+    document.getElementById("struktur1").style.display = "block"
+    document.getElementById("dwa").style.display = "none"
+    document.getElementById("add").style.display = "block"
+    localStorage.setItem('dw', inp);
 
+}
+
+
+function d() {
+    document.getElementById("dwa").style.display = "none"
+    
+}
+    </script>
 
 
 </head>
-<body>
+<div id="dwa">
 
-<div class="struktur1">
-    <div id="hed"></div>
-    <div id="hed1"></div>
-    <div id="hed2"></div>
-    <div id="hed3"></div>
-    <div id="hed4"></div>
+<h1 id="te">Привіт</h1>
+<button onclick="ceking()" id="oa">Вести</button>
+<input id="daw">
+<h1 id="faw">Веди своє імя</h1>
+
+</div>
+<body>
+    
+<img id="home" onclick="home()" src="/icon/home.png">
+<img id="add" onclick="home()" src="/icon/add.png">
+
+<!--
+<div id="tutorial">
+    <h1  id="af">Привіт це Every лудшаясоц сеть </h1>
+    <h2>По мнению автора</h2>
+</div>
+-->
+
+
+<div id="struktur1">
+    <div onclick="document.location.replace('/dino/index.html')" class="u" id="hed"></div>
+    <div class="u" id="hed1"></div>
+    <div class="u" id="hed2"></div>
+    <div class="u" id="hed3"></div>
+    <div class="u" id="hed4"></div>
     <div id="hed5"></div>
     <div id="hed6"></div>
 </div>
 
-<button onclick="push()">ada</button>
-<!--
-<video width="560" height="315" src="" controls></video>
--->
+
     
 </body>
+
 </html>
