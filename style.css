@@ -13,7 +13,9 @@
     height: 60px;
     font-size: 30px;
     display: block;
-
+    border-radius: 25px;
+    background: rgb(190,190,190);
+    background: linear-gradient(79deg, rgba(190,190,190,1) 0%, rgba(255,164,0,1) 42%);
 }
 #faw {
     position: absolute;
@@ -24,23 +26,26 @@
 }
 #daw {
     position: absolute;
-    left: 29%;
+    left: 26%;
     top: 174px;
     display: block;
+    width: 190px;
+    height: 26px;
+    font-size: 20px;
 }
 #te {
     position: absolute;
     color: rgb(0, 0, 0);
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 38%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     display: block;
-
+    font-size: 40px;
 
 }
 #af {
@@ -49,13 +54,14 @@
     left: 30px;
     top: 10px;
 }
+
 .oy {
     /*background-color: rgb(0, 0, 0);*/
 }
 #hed {
     position: absolute;
     top: 44px;
-    left: 35px;
+    left: 45px;
     height: -102px;
     width: 123px;
     padding: 41px;
@@ -70,6 +76,27 @@
 }
 #dwa {
     display: block;
+    animation: start 2s linear;
+}
+@keyframes start {
+    0% {
+        opacity: .0;
+    }
+    10% {
+        opacity: .1;
+    }
+    30% {
+        opacity: .2;
+    }
+    50% {
+        opacity: .3;
+    }
+    90% {
+        opacity: .4;
+    }
+    100% {
+        opacity: .70;
+    }
 }
 #hed1 {
     position: absolute;
@@ -83,6 +110,8 @@
     3px       /* width */
     solid     /* style */
     rgb(0, 0, 0);  /* color */
+    background-size: 178px 404px;
+    background-image: url(icon/images.jpg);
 }
 
 #hed2 {
@@ -97,6 +126,8 @@
     solid     /* style */
     rgb(0, 0, 0);  /* color */
     background: rgb(0, 0, 0);
+    background-size: 320px 347px;
+    background-image: url(icon/fes.jpg);
 }
 #home {
     position: absolute;
@@ -111,7 +142,6 @@
 }    .u:hover {
     transform: scale(1.2);
 }
-
 #add {
     position: absolute;
     left: 289px;

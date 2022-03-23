@@ -24,8 +24,10 @@ let notif = new Notification ("Проведа Every у новий пост", {
 })
 
 } 
-
-
+let hed1 = document.getElementById("hed1")
+function afw() {
+    hed1.style.left = '-273px'
+}
 
 function home() {
     document.location.replace("home.html")
@@ -33,3 +35,12 @@ function home() {
 
 
 
+//$.ajax({
+//    type: "POST",
+//    url: "index.php",
+//    data: "name: inp",
+//    dataType: "json",
+//    success: function (_response) {
+//        console.log("Все ок")
+//    }
+//});
