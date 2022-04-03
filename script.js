@@ -16,6 +16,17 @@ else if (Notification.permission !== "denied") {
     })
 }
 }
+/*var req = ({
+    method: 'GET',
+    url: 'http://google.com'
+    });
+    
+    $http(req).then(function successCallback(successData){
+    //при удачном 
+    },function errorCallback(errorData){
+    alert(34)
+    });
+    */
 function notu() {
 let notif = new Notification ("Проведа Every у новий пост", {
     tag : "ache-mail",
@@ -25,22 +36,28 @@ let notif = new Notification ("Проведа Every у новий пост", {
 
 } 
 let hed1 = document.getElementById("hed1")
-function afw() {
-    hed1.style.left = '-273px'
+
+function d() {
+    document.getElementById("aw").style.display = "block";
+    document.getElementById("e").style.display = "none";
 }
 
+function afw() { 
+    document.location.replace("chat.html")
+ }
+
+function dvf() {
+    document.location.replace("index.html")
+}
 function home() {
     document.location.replace("home.html")
 }
-
-
-
-//$.ajax({
-//    type: "POST",
-//    url: "index.php",
-//    data: "name: inp",
-//    dataType: "json",
-//    success: function (_response) {
-//        console.log("Все ок")
-//    }
-//});
+/*$.ajax({
+    type: "POST",
+    url: "index.php",
+    data: "name: inp",
+    dataType: "json",
+    success: function (_response) {
+        console.log("Все ок")
+    }
+});*/

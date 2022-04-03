@@ -15,14 +15,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Every</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
     <script>
-let dwv = localStorage.daw
 
-if (dwv == true)
- {
-     alert(143)
-    ceking()
+let homee = document.getElementById("home");
+let struktur1 = document.getElementById("struktur1")
+let daawd =  document.getElementById("dwa")
+let add = document.getElementById("add")
+let te = document.getElementById("te")
 
+
+
+
+
+
+if (localStorage.daw = true) {
+    homee.style.display = "block"
+    struktur1.style.display = "block"
+    daawd.style.display = "none"
+    add.style.display = "block"
+    te.style.display = "none"
+    localStorage.daw = true;
 }
 
 
@@ -30,7 +43,12 @@ if (dwv == true)
 function ceking() 
 
 {
+
     
+localStorage.daw = true;
+
+
+
     s = ' ';
 s = s.replace(/^\s+|\s+$/g, '');
 if(document.getElementById("daw").value == s) {
@@ -97,7 +115,9 @@ function da() {
 
 </div>
 <body>
-    
+
+<video id="fes" controls src="https://rr3---sn-2gb7sn7r.c.drive.google.com/videoplayback?expire=1648409583&ei=r4NAYtG0N9W3wtQPprO-qA0&ip=217.66.189.14&cp=QVRJWkVfWFVWRFhPOkpOb1pvaFBoMEJ3SzVqTG5BM1RuN3lTSC04eGRzeUx4UXhDM0ZHMktJakk&id=119928877e9243c3&itag=18&source=webdrive&requiressl=yes&mh=RV&mm=32&mn=sn-2gb7sn7r&ms=su&mv=u&mvi=3&pl=23&ttl=transient&susc=dr&driveid=1CXA_8-DdlRJQC6teRUVujLyBMFCsbpB-&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=10.240&lmt=1647941305464367&mt=1648394887&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRAIgKQ4D1dlYWX7gb3WspvN8Rykt-2mnFpQkfWWrH87dJskCIAYlW1agq0RodPSSp3gnAwM7CuFoyV9z1n2n8wRfTPQv&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAJikCOP0Y46okwX03EErqdpxrZbp8Pa8OBdopmIqzDTCAiEA1B0h9roBimcVrECkmSsr6KQUIvvQXGb8mFuGjxdZ1co=&cpn=Qb6V4i2oGpdGAvql&c=WEB_EMBEDDED_PLAYER&cver=1.20220323.01.00"></video>
+ 
 <img id="home" onclick="home()" src="/icon/home.png">
 <img id="add" onclick="da()" src="/icon/add.png">
 
@@ -107,6 +127,7 @@ function da() {
     <h2>По мнению автора</h2>
 </div>
 -->
+
 
 
 <div id="struktur1">
