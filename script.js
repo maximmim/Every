@@ -28,7 +28,7 @@ else if (Notification.permission !== "denied") {
     });
     */
 function notu() {
-let notif = new Notification ("Проведа Every у новий пост", {
+let notif = new Notification ("Every у новий пост", {
     tag : "ache-mail",
     body: "Every Просе вас відпочити",
     icon: "da.jpg"
@@ -49,6 +49,9 @@ function dvf() {
     document.location.replace("index.html")
 }
 function home() {
+    if (localStorage.daw){
+
+    }
     document.location.replace("home.html")
 }
 /*$.ajax({
