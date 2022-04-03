@@ -16,91 +16,7 @@
     <title>Every</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     
-    <script>
-
-let homee = document.getElementById("home");
-let struktur1 = document.getElementById("struktur1")
-let daawd =  document.getElementById("dwa")
-let add = document.getElementById("add")
-let te = document.getElementById("te")
-
-
-
-
-
-
-if (localStorage.daw = true) {
-    homee.style.display = "block"
-    struktur1.style.display = "block"
-    daawd.style.display = "none"
-    add.style.display = "block"
-    te.style.display = "none"
-    localStorage.daw = true;
-}
-
-
-
-function ceking() 
-
-{
-
-    
-localStorage.daw = true;
-
-
-
-    s = ' ';
-s = s.replace(/^\s+|\s+$/g, '');
-if(document.getElementById("daw").value == s) {
-        alert("!!!")
-    }
-    else {
-    dwv = true;
-    
-    let inp = document.getElementById("daw").value;
-    localStorage.setItem('dw', inp);
-    alert("Привіт " + inp);
-    document.getElementById("home").style.display = "block"
-    document.getElementById("struktur1").style.display = "block"
-    document.getElementById("dwa").style.display = "none"
-    document.getElementById("add").style.display = "block"
-    document.getElementById("te").style.display = "none"
-    localStorage.setItem('dw', inp);
-
-    $.ajax({
-    type: "POST",
-    url: "ind.php",
-    data: {
-        "name": inp 
-    },
-    success: function () {
-        console.log("Все ок")
-    }
-});
-    }
-}
-
-function getRandomArrayElement(arr){
-   return arr[Math.floor(Math.random()*arr.length)]
-}
-
-let svd = ["Hi", "Hallo","Përshëndetje","Привет","Hola","Ahoj","Bonjour","أهلا","Χαίρετε","Ciao","добры дзень","Здравейте"]
-
-setInterval(function () {
-$("#te").text(getRandomArrayElement(svd))
-  },3600)
-
-
-
-function d() {
-    document.getElementById("dwa").style.display = "none"
-    
-}
-function da() {
-
-  }
-    </script>
-
+ 
 
 </head>
 
@@ -109,8 +25,9 @@ function da() {
 <div id="dwa">
 
 
+
 <button onclick="ceking()" id="oa">Вести</button>
-<input id="daw">
+<input placeholder="Веди своє імя" id="daw">
 <h1 id="faw">Веди своє імя</h1>
 
 </div>
@@ -120,6 +37,9 @@ function da() {
  
 <img id="home" onclick="home()" src="/icon/home.png">
 <img id="add" onclick="da()" src="/icon/add.png">
+<img id="close" onclick="cse()" src="/icon/close.png">
+
+
 
 <!--
 <div id="tutorial">

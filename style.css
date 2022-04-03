@@ -11,32 +11,40 @@
 }
 #oa {
     position: absolute;
-    left: 110px;
+    left: 80px;
     top: 509px;
-    width: 189px;
-    height: 60px;
-    font-size: 30px;
+    width: 268px;
+    height: 87px;
+    font-size: 50px;
     display: block;
-    border-radius: 25px;
+    border-radius: 26px;
     background: rgb(190,190,190);
     background: linear-gradient(79deg, rgba(190,190,190,1) 0%, rgba(255,164,0,1) 42%);
-
 }
 #faw {
     position: absolute;
     left: 110px;
     top: 100px;
     color: rgb(0, 0, 0);
-    display: block;
+    display: none;
 }
 #daw {
     position: absolute;
-    left: 26%;
+    left: 24%;
     top: 174px;
     display: block;
-    width: 190px;
-    height: 26px;
-    font-size: 20px;
+    width: 210px;
+    height: 35px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+#close {
+    position: absolute;
+    left: 31px;
+    top: 824px;
+    width: 77px;
+    height: 75px;
+    display: none;
 }
 #te {
     position: absolute;
@@ -50,7 +58,7 @@
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     display: block;
-    font-size: 40px;
+    font-size: 50px;
 
 }
 #af {

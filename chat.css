@@ -15,8 +15,21 @@
     -webkit-box-shadow: 2px 2px 4px #888;
     -moz-box-shadow: 2px 2px 4px #888;
     box-shadow: 2px 2px 4px #888;
+    border-style: solid;
 
 }
+#fdr:before { 
+	content: ' '; 
+	position: absolute; 
+	width: 0; 
+	height: 0; 
+	left: 20px; 
+	top: 40px; 
+	border: 25px solid; 
+	border-color: #666 transparent transparent #666; 
+    
+}
+
 #d {
     position: absolute;
     left: 0px;
@@ -38,7 +51,7 @@
     top: 741px;
     font-size: 20px;
 }
-#aw {
+#Eror {
     position: absolute;
     left: 48px;
     top: 169px;
@@ -66,9 +79,11 @@
     left: 61px;
     top: -26px;
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    
 }
-
+#qa {
+    font-size: 20px;
+}
 #awdf {
     position: absolute;
     top: 802px;
@@ -76,11 +91,12 @@
     height: 77px;
     width: 406px;
     border-radius: 25px;
-    background: rgb(146, 146, 146);
+    background: rgb(0, 89, 255);
 }
 #daw {
     position: absolute;
     left: 158px;
     top: -88px;
     font-size: 80px;
+    color: rgb(255, 255, 255);
 }
