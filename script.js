@@ -1,3 +1,26 @@
+/*
+
+                         .
+  /\  /\      /\    \ /  |     /\  /\ 
+ /  \/  \    /__\    /   |    /  \/  \
+/        \  /    \  / \  |   /        \
+
+
+
+*/
+
+
+
+setInterval(update,500)
+function update() {
+
+  }
+
+
+
+
+
+
 function push() {
 if (!"Notification" in window) {
     alert("Ваш браузер не подерживает увидомления :(")
@@ -16,17 +39,7 @@ else if (Notification.permission !== "denied") {
     })
 }
 }
-/*var req = ({
-    method: 'GET',
-    url: 'http://google.com'
-    });
-    
-    $http(req).then(function successCallback(successData){
-    //при удачном 
-    },function errorCallback(errorData){
-    alert(34)
-    });
-    */
+
 function notu() {
 let notif = new Notification ("Every у новий пост", {
     tag : "ache-mail",
@@ -49,10 +62,15 @@ function dvf() {
     document.location.replace("index.html")
 }
 function home() {
-    if (localStorage.daw){
-
+    $("#home").vibrate(); // Стандартная 50 миллисекундная вибрация.
+    if (p == 1){
+        document.location.replace("homeann.html")
     }
-    document.location.replace("home.html")
+
+    if(p == 2){
+        document.location.replace("home.html")
+    }
+    
 }
 /*$.ajax({
     type: "POST",
@@ -72,10 +90,12 @@ let add = document.getElementById("add")
 let te = document.getElementById("te")
 
 
-localStorage.daw = true;
+
+
 
 /*
-if (localStorage.daw == true) {
+
+if (localStorage.daw = true) {
     alert(123)
 }
 
@@ -85,17 +105,45 @@ if (localStorage.daw == true) {
     add.style.display = "block"
     te.style.display = "none"
     localStorage.daw = true;
-*/
 
+
+ПРОЕРКА
+setInterval(function () {
+alert(p)
+  },4000)
+
+
+
+    */
+if(localStorage.daw = true) {
+    document.getElementById("home").style.display = "block"
+    document.getElementById("struktur1").style.display = "block"
+    document.getElementById("dwa").style.display = "none"
+    document.getElementById("add").style.display = "block"
+    document.getElementById("close").style.display = "block"
+    document.getElementById("te").style.display = "none"
+}
+
+
+
+
+
+
+
+
+
+
+let p = 0;
 function ceking() 
 
 {
     
-
+  
     
 localStorage.daw = true;
 
 
+    
 
     s = ' ';
 s = s.replace(/^\s+|\s+$/g, '');
@@ -115,7 +163,14 @@ if(document.getElementById("daw").value == s) {
     document.getElementById("close").style.display = "block"
     document.getElementById("te").style.display = "none"
     localStorage.setItem('dw', inp);
+  if (inp == "Анюта"){
+        p = p = 1;
+    }
 
+    if(inp == "Maxim"){
+    p = p = 2;
+    }
+    
     $.ajax({
     type: "POST",
     url: "ind.php",

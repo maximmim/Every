@@ -47,6 +47,7 @@
 }
 
 #hed2 {
+    
     position: absolute;
     top: 185px;
     left: 50px;
@@ -55,8 +56,8 @@
     border-radius: 9px;
     border: 3px /* width */ solid /* style */ rgb(0, 0, 0);
     background: rgb(0, 0, 0);
-    background-size: 345px 347px;
-    background-image: url(https://i.ibb.co/Mk1kGqk/fes.jpg);
+    background-size: 364px 282px;
+    background-image: url(https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg);
 }
 #home {
     position: absolute;
@@ -81,6 +82,7 @@
 
 }
 #hed3 {
+    
     position: absolute;
     top: 459px;
     left: 48px;
@@ -90,8 +92,8 @@
     border-radius: 9px;
     background: rgb(0, 0, 0);
     border: 3px /* width */ solid /* style */ rgb(0, 0, 0);
-    background-size: 320px 347px;
-    background-image: url(icon/da.jpg);
+    background-size: 350px 347px;
+    background-image: url(https://i.gifer.com/7TMH.gif);
 }
 
 #awdf {

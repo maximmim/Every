@@ -113,7 +113,6 @@
     border-bottom: 1px solid #000;
     margin: auto;
     height: 200px;
-    display: none;
 }
 .buthon {
     width: 68px;
@@ -531,6 +530,9 @@ background: rgb(247, 247, 247); /* Цвет фона */
     position: absolute;
 }
 
+#skins {
+    display: none;
+}
 
 #fe {
     position: absolute;

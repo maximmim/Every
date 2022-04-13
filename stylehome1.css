@@ -47,6 +47,7 @@
 }
 
 #hed2 {
+    display: none;
     position: absolute;
     top: 185px;
     left: 50px;
@@ -81,6 +82,7 @@
 
 }
 #hed3 {
+    display: none;
     position: absolute;
     top: 459px;
     left: 48px;
