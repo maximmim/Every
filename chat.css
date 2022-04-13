@@ -18,7 +18,33 @@
         border-style: solid;
     
 }
-
+#dc {
+    position: absolute;
+    top: 231px;
+    left: -12px;
+    display: none;
+}
+#wadc {
+    position: absolute;
+    left: 288px;
+    top: 100px;
+}
+#awv {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+#adb {
+    position: absolute;
+    left: 104px;
+    top: 66px;
+    width: 100px;
+}
+#wdw {
+    position: absolute;
+    top: 127px;
+    left: 148px;
+}
 
 #d {
     position: absolute;

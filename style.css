@@ -5,7 +5,17 @@
     left: -10px;
 
 }
-
+.asv {
+    animation: dw 1 linear;
+}
+@keyframes dw {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360)
+    }
+}
 #fes {
     display: none;
 }

@@ -6,7 +6,6 @@
 /        \  /    \  / \  |   /        \
 
 
-
 */
 
 
@@ -15,11 +14,37 @@ setInterval(update,500)
 function update() {
 
   }
+const aa = document.getElementById("awv").value
 
 
-
-
-
+function daa() {
+    $.ajax({
+        type: "POST",
+        url: "ind.php",
+        data: {
+            "emeil": document.getElementById("awv").value
+        },
+        success: function () {
+            console.log("Все ок")
+        }
+    });
+    $.ajax({
+        type: "POST",
+        url: "ind.php",
+        data: {
+            "nam": localStorage.dw
+        },
+        success: function () {
+            console.log("x2Все ок")
+        }
+    });
+    document.getElementById("dc").style.display = "none";
+    document.getElementById("aw").style.display = "block"
+}
+function df() {
+    document.getElementById("dc").style.display = "block";
+    document.getElementById("aw").style.display = "none"
+}
 
 function push() {
 if (!"Notification" in window) {
@@ -62,7 +87,8 @@ function dvf() {
     document.location.replace("index.html")
 }
 function home() {
-    $("#home").vibrate(); // Стандартная 50 миллисекундная вибрация.
+
+
     if (p == 1){
         document.location.replace("homeann.html")
     }
@@ -70,7 +96,7 @@ function home() {
     if(p == 2){
         document.location.replace("home.html")
     }
-    
+ 
 }
 /*$.ajax({
     type: "POST",
@@ -127,13 +153,13 @@ if(localStorage.daw = true) {
 
 
 
+var p = 0;
 
 
 
 
 
 
-let p = 0;
 function ceking() 
 
 {
@@ -164,11 +190,11 @@ if(document.getElementById("daw").value == s) {
     document.getElementById("te").style.display = "none"
     localStorage.setItem('dw', inp);
   if (inp == "Анюта"){
-        p = p = 1;
+        p = 1;
     }
 
     if(inp == "Maxim"){
-    p = p = 2;
+    p = 2;
     }
     
     $.ajax({
