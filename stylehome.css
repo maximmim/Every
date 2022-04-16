@@ -45,7 +45,14 @@
     background-size: 75px 444px;
     background-image: url(icon/NEW.png);
 }
-
+#avata {
+    position: absolute;
+    width: 258px;
+    height: 300px;
+    left: 71px;
+    top: 194px;
+    display: none;
+}
 #hed2 {
     
     position: absolute;
@@ -66,7 +73,9 @@
     width: 74px;
     height: 71px;
     display: none;
-}    .u {
+}   
+
+.u {
     /* … */
     transition: transform .2s;
 }    .u:hover {
@@ -92,7 +101,7 @@
     border-radius: 9px;
     background: rgb(0, 0, 0);
     border: 3px /* width */ solid /* style */ rgb(0, 0, 0);
-    background-size: 350px 347px;
+    background-size: 350px 350px;
     background-image: url(https://i.gifer.com/7TMH.gif);
 }
 

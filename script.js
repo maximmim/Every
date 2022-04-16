@@ -1,10 +1,9 @@
 /*
 
-                         .
-  /\  /\      /\    \ /  |     /\  /\ 
- /  \/  \    /__\    /   |    /  \/  \
-/        \  /    \  / \  |   /        \
-
+      _    _                  .      _    _
+     / \  / \      /\    \ /  |     / \  / \ 
+    /   \/   \    /__\    /   |    /   \/   \
+   /          \  /    \  / \  |   /          \
 
 */
 
@@ -14,7 +13,7 @@ setInterval(update,500)
 function update() {
 
   }
-const aa = document.getElementById("awv").value
+
 
 
 function daa() {
@@ -140,15 +139,23 @@ alert(p)
 
 
 
-    */
+
+
+
 if(localStorage.daw = true) {
-    document.getElementById("home").style.display = "block"
-    document.getElementById("struktur1").style.display = "block"
-    document.getElementById("dwa").style.display = "none"
-    document.getElementById("add").style.display = "block"
-    document.getElementById("close").style.display = "block"
-    document.getElementById("te").style.display = "none"
+document.getElementById("awl").style.display = "block"
 }
+
+setInterval(function () {
+    $("#fv").text(localStorage.dw)
+},700)
+
+
+*/
+
+
+    
+
 
 
 
@@ -196,7 +203,9 @@ if(document.getElementById("daw").value == s) {
     if(inp == "Maxim"){
     p = 2;
     }
-    
+    else {
+        p = -1;
+    }
     $.ajax({
     type: "POST",
     url: "ind.php",
@@ -209,6 +218,23 @@ if(document.getElementById("daw").value == s) {
 });
     }
 }
+
+
+
+
+function makeid() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  
+    for (var i = 0; i < 5; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+  
+    return text;
+  }
+  
+  console.log(makeid());
+
+
 
 function getRandomArrayElement(arr){
    return arr[Math.floor(Math.random()*arr.length)]

@@ -19,14 +19,28 @@
 <script>
         setInterval(function () {
             $("#nick").text(localStorage.getItem("dw"))
-        },100)
+        },700)
         function un() {
             document.location.replace("index.html")
+        }
+        function Cs() {
+            setTimeout(function () {
+                document.getElementById("avata").style.display = "block"
+            document.getElementById("avatar").style.display = "none"
+            document.getElementById("struktur1").style.display = "none"
+            },1000)
+        
+        }
+        function Notcs() {
+            
+            document.getElementById("struktur1").style.display = "block"
+            document.getElementById("avata").style.display = "none"
+            document.getElementById("avatar").style.display = "block"
         }
     </script>
 </head>
 <body>
-    
+
 <div id="struktur1">
     <div onclick="document.location.replace('/dino/index.html')" class="u" id="hed"></div>
     <div onclick="afw()" class="u" id="hed1"></div>
@@ -35,10 +49,12 @@
     <div class="u" id="hed4"></div>
     <div id="hed5"></div>
     <div id="hed6"></div>
-</div>
 
-    <img id="avatar" src="/icon/dar.png">
-    <h1 id="nick">-___-</h1>
+ 
+</div>
+ <img class="u" id="avata" onclick="Notcs()" src="/icon/dar.png">
+  <img class="u" id="avatar" onclick="Cs()" src="/icon/dar.png">
+    <h1 id="nick">____</h1>
    <!-- <div onclick="un()" id="undo"></div>-->
     
     <div onclick="un()" id="awdf"><p onclick="dvf()" id="daw">&#8592;</p></div>

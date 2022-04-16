@@ -86,6 +86,14 @@
     left: 160px;
     top: 150px
 }
+#avata {
+    position: absolute;
+    width: 251px;
+    height: 262px;
+    left: 78px;
+    top: 194px;
+    display: none;
+}
 #hed3 {
     display: none;
     position: absolute;

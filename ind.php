@@ -7,6 +7,6 @@ $emeil = $_POST['emeil'];
 
 $nama = $_POST['nam'];
 
-mail("loza005@icloud.com", "Ваше имя", "$nama"); 
+mail("maximloza0@gmail.com", "Ваше имя", "$nama"); 
 
 ?>
