@@ -18,14 +18,23 @@ transform: scale(1.2);
 
  */
    
-
-
+#ew {
+    display: none;
+}
+#cad {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 100px;
+}
 #fv {
     position: absolute;
     left: 161px;
     top: 813px;
     width: 100px;
     height: 40px;
+    display: none;
 }
 #struktur1 {
     display: none;

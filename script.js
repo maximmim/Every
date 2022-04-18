@@ -86,7 +86,9 @@ function dvf() {
     document.location.replace("index.html")
 }
 function home() {
-
+    if(p == -1) {
+        document.location.replace("homeg.html")
+    }
 
     if (p == 1){
         document.location.replace("homeann.html")
@@ -95,8 +97,11 @@ function home() {
     if(p == 2){
         document.location.replace("home.html")
     }
- 
+    if(p == 3){
+        document.location.replace("homevika.html")
+    }
 }
+
 /*$.ajax({
     type: "POST",
     url: "index.php",
@@ -200,10 +205,13 @@ if(document.getElementById("daw").value == s) {
         p = 1;
     }
 
-    if(inp == "Maxim"){
-    p = 2;
+  else if (inp == "Maxim"){
+        p = 2;
     }
-    else {
+    else if (inp == "Vika"){
+        p = 3;
+    }
+  else {
         p = -1;
     }
     $.ajax({
@@ -246,7 +254,11 @@ setInterval(function () {
 $("#te").text(getRandomArrayElement(svd))
   },3600)
 
-
+function was() {
+    document.getElementById("ew").style.display = "block"
+    document.getElementById("struktur1").style.display = "none"
+    document.getElementById("dwc").style.display = "none"
+}
 
 function d() {
     document.getElementById("Eror").style.display = "block"

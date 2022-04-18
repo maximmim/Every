@@ -1,0 +1,128 @@
+#avatar {
+    position: absolute;
+    left: 151px;
+    top: 7px;
+    width: 100px;
+    height: 100px;
+}
+#nick {
+    position: absolute;
+    top: 100px;
+    left: 37%;
+}
+
+#undo {
+    position: absolute;
+    left: 0px;
+    top: 717px;
+    width: 387px;
+    height: 107px;
+    background: rgb(190,190,190);
+    background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(255,164,0,1) 66%);
+    border-radius: 25px;
+}
+#struktur1 {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+}
+
+#hed1 {
+    position: absolute;
+    top: 44px;
+    left: 273px;
+    width: 120px;
+    display: none;
+    height: 445px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
+    background-size: 75px 444px;
+    background-image: url(icon/NEW.png);
+}
+
+#hed2 {
+    display: none;
+    position: absolute;
+    top: 185px;
+    left: 50px;
+    width: 348px;
+    height: 264px;
+    border-radius: 9px;
+    border: 3px /* width */ solid /* style */ rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background-size: 345px 347px;
+    background-image: url(https://i.ibb.co/Mk1kGqk/fes.jpg);
+}
+#home {
+    position: absolute;
+    left: 150px;
+    top: 824px;
+    width: 74px;
+    height: 71px;
+    display: none;
+}    .u {
+    /* … */
+    transition: transform .2s;
+}    .u:hover {
+    transform: scale(1.2);
+}
+#add {
+    position: absolute;
+    left: 270px;
+    top: 827px;
+    width: 66px;
+    display: none;
+    height: 62px;
+
+}
+#wa {
+    position: absolute;
+    left: 160px;
+    top: 150px
+}
+#avata {
+    position: absolute;
+    width: 251px;
+    height: 262px;
+    left: 78px;
+    top: 194px;
+    display: none;
+}
+#hed3 {
+    display: none;
+    position: absolute;
+    top: 459px;
+    left: 48px;
+    height: -102px;
+    width: -40px;
+    padding: 175px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border: 3px /* width */ solid /* style */ rgb(0, 0, 0);
+    background-size: 320px 347px;
+    background-image: url(icon/da.jpg);
+}
+
+#awdf {
+    position: absolute;
+    top: 802px;
+    left: 5px;
+    height: 77px;
+    width: 406px;
+    border-radius: 25px;
+    background: rgb(190,190,190);
+background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%);
+}
+#daw {
+    position: absolute;
+    left: 158px;
+    top: -88px;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
