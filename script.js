@@ -9,6 +9,8 @@
 
 
 
+
+
 setInterval(update,500)
 function update() {
 
@@ -78,9 +80,22 @@ function d() {
     document.getElementById("aw").style.display = "block";
 }
 
+
+
+
+
+
+
+
+
+
 function afw() { 
-    document.location.replace("chat.html")
- }
+    //document.location.replace("https://t.me/panmonnbot")
+    //document.location.replace("chat.html")
+    document.location.replace("paimon.html")
+
+
+}
 
 function dvf() {
     document.location.replace("index.html")
@@ -156,11 +171,10 @@ setInterval(function () {
 },700)
 
 
+
+
+
 */
-
-
-    
-
 
 
 
@@ -171,13 +185,12 @@ var p = 0;
 
 
 
-
 function ceking() 
 
 {
-    
-  
-    
+
+
+
 localStorage.daw = true;
 
 
@@ -230,6 +243,7 @@ if(document.getElementById("daw").value == s) {
 
 
 
+
 function makeid() {
     var text = "";
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -252,12 +266,15 @@ let svd = ["Привіт","Hi", "Hallo","Përshëndetje","Привет","Hola","
 
 setInterval(function () {
 $("#te").text(getRandomArrayElement(svd))
+
   },3600)
 
 function was() {
     document.getElementById("ew").style.display = "block"
     document.getElementById("struktur1").style.display = "none"
     document.getElementById("dwc").style.display = "none"
+    document.getElementById("daz").style.display = "block"
+   
 }
 
 function d() {
@@ -265,6 +282,10 @@ function d() {
     
 }
 function da() {
+        document.getElementById("ew").style.display = "block"
+        document.getElementById("struktur1").style.display = "none"
+        document.getElementById("dwc").style.display = "none"
+        document.getElementById("daz").style.display = "block"
 
 }
 function cse() {
@@ -276,3 +297,6 @@ function cse() {
         alert("Отмена")
     }
 }
+
+
+

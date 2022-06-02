@@ -23,12 +23,36 @@ crossorigin="anonymous"></script>
 }
 
 setTimeout(logs, 3000)
+function fs() {
+    document.getElementById('set').style.display = 'block';
+}
+function dd() {
+  
+    localStorage.aw = true;
+    
+    /*
+    if (localStorage.aw = true) {
+        
+    }
+*/
 
+    }
     </script>
 </head>
 
 <style>
+#adw {
+    position: absolute;
+    left: 100px;
+    top: 15px;
+    color: rgb(255, 255, 255);
+}
+#dwc {
+    position: absolute;
+    left: 157px;
+    top: 28px;
 
+}
 #buthon {
     position: absolute;
     top: 130px;
@@ -153,11 +177,14 @@ html {
 <p id="adaqd">1.9.1v beta video </p>
 <div id="din"></div>
 <button onclick="document.location.replace('index.html')" id="buthon">Играть</button>
-<button onclick="document.getElementById('set').style.display = 'block'
-                 document.getElementById('ew').style.display = 'block' " id="buthons">Настройки</button>
+<button onclick="fs()" id="buthons">Настройки</button>
 <div id="set" onclick="document.getElementById('ew').style.display = 'none'
-document.getElementById('set').style.display = 'none' "></div>
+document.getElementById('set').style.display = 'none' ">
+<button onclick="dd()" id="dwc">on</button>
+<p id="adw">ЗВУК</p>
+</div>
 <p id="ew">Тут ничего нет</p>
+
 <p id="ec">Переверни телефон другой стороной Пожалусто</p>
 </div>
 </body>

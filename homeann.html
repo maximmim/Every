@@ -34,10 +34,81 @@
             document.getElementById("avata").style.display = "none"
             document.getElementById("avatar").style.display = "block"
         }
+
+        let d = localStorage.d;
+      
+      if (d == "like") {
+        document.getElementById("adki").style.display = "block"
+    document.getElementById("adkii").style.display = "none"
+    document.getElementById("adkiii").style.display = "none" 
+    }        
+      if (d == "dz") {
+        document.getElementById("adkii").style.display = "block"
+    document.getElementById("adki").style.display = "none"
+    document.getElementById("adkiii").style.display = "none"
+      }
+      if (d == "d") {
+        document.getElementById("adkiii").style.display = "block"
+    document.getElementById("adki").style.display = "none"
+    document.getElementById("adkii").style.display = "none"
+      }
+     
     </script>
 </head>
 <body>
     
+    <div id="av"></div>
+ <!-- <div id="va">Щот в дино: </div>-->  
+
+    <div id="dgt"><img id="gf" src="icon/like.png" onclick="
+      document.getElementById('adki').style.display = 'block'
+      document.getElementById('dgt').style.display = 'none'
+      document.getElementById('adkii').style.display = 'none'
+      document.getElementById('adkiii').style.display = 'none'
+      localStorage.d = 'like'
+        ">
+    <img id="gff" src="icon/dz.png" onclick="
+      document.getElementById('adkii').style.display = 'block'
+      document.getElementById('dgt').style.display = 'none'
+      document.getElementById('adkiii').style.display = 'none'
+      document.getElementById('adki').style.display = 'none'
+        localStorage.d = 'dz'
+        ">
+        <img id="gfff" src="icon/demon_dino.png" onclick="
+      document.getElementById('adkiii').style.display = 'block'
+      document.getElementById('adkii').style.display = 'none'
+      document.getElementById('adki').style.display = 'none'
+      document.getElementById('dgt').style.display = 'none'
+        localStorage.d = 'd'
+        
+        ">
+
+    </div>
+<img src="icon/like.png" id="adki" onclick="
+
+    struktur1.style.display = 'none';
+    document.getElementById('dgt').style.display = 'block'
+    document.getElementById('adki').style.display = 'none'
+    
+"> 
+
+
+
+<img src="icon/dz.png" id="adkii" onclick="
+
+    struktur1.style.display = 'none';
+    document.getElementById('dgt').style.display = 'block'
+    document.getElementById('adki').style.display = 'none'
+    
+"> 
+<img src="icon/demon_dino.png" id="adkiii" onclick="
+
+    struktur1.style.display = 'none';
+    document.getElementById('dgt').style.display = 'block'
+    document.getElementById('adki').style.display = 'none'
+    
+"> 
+
 <div id="struktur1">
     <div onclick="document.location.replace('/dino/index.html')" class="u" id="hed"></div>
     <div onclick="afw()" class="u" id="hed1"></div>
@@ -47,8 +118,8 @@
     <div id="hed5"></div>
     <div id="hed6"></div>
 </div>
-    <img class="u" id="avata" onclick="Notcs()" src="/icon/gg.png">
-    <img class="u" id="avatar" onclick="Cs()" src="/icon/gg.png">
+    <img class="u" id="avata" onclick="Notcs()" src="icon/gg.png">
+    <img class="u" id="avatar" onclick="Cs()" src="icon/gg.png">
     <h1 id="nick">______</h1>
     <h2 id="wa">ШЕЙХ</h2>
    <!-- <div onclick="un()" id="undo"></div>-->

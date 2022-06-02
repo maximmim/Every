@@ -17,7 +17,16 @@ transform: scale(1.2);
 
 
  */
-   
+ #daz {
+    position: absolute;
+    left: 30px;
+    top: 72px;
+    width: 378px;
+    height: 538px;
+    display: none;
+    
+    
+    }
 #ew {
     display: none;
 }
@@ -172,8 +181,8 @@ transform: scale(1.2);
     3px       /* width */
     solid     /* style */
     rgb(0, 0, 0);  /* color */
-    background-size: 75px 444px;
-    background-image: url(icon/NEW.png);
+    background-size: 133px 443px;
+    background-image: url(icon/paimon.png);
 }
 #dwc {
     position: absolute;

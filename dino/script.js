@@ -62,15 +62,17 @@ if(dino.classList != "jump" && dinodown.classList != "jump" && demon.classList !
     dino.style.display= "block";
     //document.getElementById("dinoma").style.display = "none";
     //document.getElementById("dinom").style.display = "none";
+
+    if (localStorage.aw = true) {
     let audio = new Audio(); // Создаём новый элемент Audio
     audio.src = 'audio/jump.mp3'; // Указываем путь к звуку 
     audio.autoplay = true; // Автоматически запускаем
-    
+    }
 
     dino.classList.add("jump");
         i++;    
         demon.classList.add("jump")
-    
+        localStorage.scoredino = i;
         $("#fs").text(localStorage.dat);
         localStorage.dat++;
         $('#fe').text(i);
@@ -147,7 +149,12 @@ let isAlite = setInterval (function(){
     let demonTop = parseInt(window.getComputedStyle(demon).getPropertyValue("top"))
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"))
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"))
-//Проверка на столкновения с кактусом 
+
+
+
+
+
+    //Проверка на столкновения с кактусом 
 if (da == true) {
   if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) 
   { 
@@ -157,7 +164,7 @@ if (da == true) {
    //document.location.replace('reset.html');
    
    
-    live = live - 1;
+   //live = live - 1;
   }
   if (cactusLeft < 50 && cactusLeft > 0 && demonTop >= 140) 
   { 
@@ -204,7 +211,7 @@ document.getElementById("dheal").style.display = "block"
 if (i == 100) {
     dn()
 }
-if (live == 0) {
+if (live < 0) {
 //document.getElementById("heal").style.display = "none"
 //document.getElementById("dheal").style.display = "block"
 //document.getElementById("reset").style.display = "block"
@@ -230,18 +237,44 @@ dino.classList.remove("jump")
 //document.getElementById("dad").style.display = "none"
 //document.getElementById("www").style.display = "none"
 
-
-
-
-
-
-
-
-
 //alert("ТИ ПРОИГРАЛ")
 document.location.replace('reset.html');
 //$("#www").text(live)
 }
+
+if (live == 0) {
+    //document.getElementById("heal").style.display = "none"
+    //document.getElementById("dheal").style.display = "block"
+    //document.getElementById("reset").style.display = "block"
+    //document.getElementById("gemv").style.display = "block"
+    //document.getElementById("dinowath").style.display = "block"
+    
+    //dino.style.display = "none"
+    dino.classList.remove("jump")
+    //document.getElementById("jum").style.display = "none"
+    //document.getElementById("sit").style.display = "none"
+    //let cactusLefta = cactus.style.left;
+    //cactus.style.left = cactusLefta;
+    //cactus.classList.remove("cactusmov")
+    //document.getElementById("f").style.display = "none"
+    //doc.classList.remove("doc")
+    
+    //document.getElementById("live").style.display = "none"
+    //document.getElementById("af").style.display = "none"
+    //document.getElementById("fe").style.display = "none"
+    
+    
+    
+    //document.getElementById("dad").style.display = "none"
+    //document.getElementById("www").style.display = "none"
+    //alert("ТИ ПРОИГРАЛ")
+    document.location.replace('reset.html');
+    //$("#www").text(live)
+    }
+
+
+
+
 function daa() {
 da = true
 

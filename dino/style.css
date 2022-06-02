@@ -113,6 +113,7 @@
     border-bottom: 1px solid #000;
     margin: auto;
     height: 200px;
+ 
 }
 .buthon {
     width: 68px;
@@ -249,6 +250,9 @@
     background-size: 45px 41px;
     top: 90px;
     left: 150px;
+    display: none;
+}
+#skins {
     display: none;
 }
 #dont3 {
@@ -530,9 +534,6 @@ background: rgb(247, 247, 247); /* Цвет фона */
     position: absolute;
 }
 
-#skins {
-    display: none;
-}
 
 #fe {
     position: absolute;
