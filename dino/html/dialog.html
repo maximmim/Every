@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #dino {
+            width: 98px;
+            height: 98px;
+            background-image: url(img/googe_dino.png);
+            background-size: 102px 104px;
+            display: block;
+            position: absolute;
+            top: 208px;
+            left: 11px;
+        }
+
+        #demon {
+            width: 98px;
+            height: 98px;
+            background-image: url(img/demon_dino.png);
+            background-size: 102px 104px;
+            display: block;
+            position: absolute;
+            top: 208px;
+            left: 11px;
+            display: none;
+        }
+
+
+
+        #da {
+            width: 98px;
+            height: 98px;
+            position: absolute;
+            left: 678px;
+            top: 8px;
+            background-size: 102px 104px;
+            background-image: url(img/offline-sprited-2x.png);
+        }
+
+        #d {
+            position: absolute;
+            left: 501px;
+            top: 26px;
+            display: none;
+        }
+        #dd {
+            position: absolute;
+            left: 461px;
+            top: 26px;
+            display: none;
+        } 
+        #a {
+            position: absolute;
+            left: 141px;
+            top: 204px;
+            display: none;
+        }
+
+        .poka {
+            animation: pok 0.5s linear;
+        }
+
+        @keyframes pok {
+            0% {
+                top: 8px;
+            }
+
+            50% {
+                top: 15px;
+            }
+
+            100% {
+                top: 8px;
+            }
+        }
+
+        .h {
+            animation: ok 0.5s linear;
+        }
+
+        @keyframes ok {
+            0% {
+                top: 208px;
+            }
+
+            50% {
+                top: 180px;
+            }
+
+            100% {
+                top: 208px;
+            }
+        }
+
+        #tub {
+            display: none;
+        }
+    #yes {
+        position: absolute;
+        left: 606px;
+        top: 208px;
+    }
+    #dont {
+        position: absolute;
+        left: 646px;
+        top: 208px;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dialog</title>
+</head>
+
+<body>
+    <script>
+        function nach() {
+            document.getElementById("da").classList.add("poka")
+            document.getElementById("d").style.display = "block"
+            document.getElementById("dino").classList.add("h")
+            document.getElementById("tub").style.display = "block"
+            document.getElementById("a").style.display = "none"
+            document.getElementById("but").style.display = "none"
+            setTimeout(e, 2000)
+        }
+        function e() {
+            document.getElementById("a").style.display = "block"
+        }
+        function ha() {
+            document.getElementById("d").style.display = "none"
+            document.getElementById("dd").style.display = "block"
+
+
+        }
+        function fd() {
+            document.getElementById("demon").style.display = "block"
+            document.getElementById("dino").style.display = "none"
+
+        }
+    </script>
+    <div id="demon"></div>
+    <div id="da"></div>
+    <button id="yes" onclick="fd()">ДА</button>
+    <button id="dont">Нет</button>
+    <div id="dino"></div>
+    <p id="d">!КАР !КАР !КАР</p>
+    <p id="dd">Хочеш на темною Сторону ?</p>
+    <p id="a">Что ?</p>
+    <button id="but" onclick="nach();">Начать диалог</button>
+    <button onclick="ha();" id="tub">Перевести через гугл переводчик</button>
+</body>
+
+</html>

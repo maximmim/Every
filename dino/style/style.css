@@ -1,0 +1,723 @@
+
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #e0e0e0;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: rgb(51, 122, 183);
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+  
+  .preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* фоновый цвет */
+    background: #e0e0e0;
+    z-index: 1001;
+  }
+  
+  .preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+.game {
+    width: 600px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    height: 200px;
+}
+.buthon {
+    width: 68px;
+    height: 343px;
+    background: rgb(64, 68, 250);
+    border-radius: 25px;
+}
+#rite {
+    left: 2px;
+    top: -5px;
+    position: absolute;
+}
+
+#s1 {
+    display: block;
+}
+#s2 {
+    display: none;
+}
+
+
+#left {
+    right: 2px;
+    top: -5px;
+    position: absolute;
+}
+
+.dinoskin {
+    position: absolute;
+    left: 285px;
+    top: 12px;
+    width: 245px;
+    height: 250px;
+
+}
+
+.dinoskindown {
+    position: absolute;
+    left: 255px;
+    top: 102px;
+    width: 295px;
+    height: 150px;
+    display: none;
+
+}
+
+#stort {
+
+    position: absolute; 
+    left: 342px;
+    top: 272px;
+    width: 123px;
+    font-size: 30px;
+    border-radius: 5px;
+    height: 42px;
+    background-color: #4830F0;
+
+    
+}
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/googe_dino.png);
+    background-size: 50px 50px;
+    display: block;
+    position: relative;
+    top: 150px;
+}
+#dinowath {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/offline-sprite-dwwx.png);
+    background-size: 50px 50px;
+    display: block;
+    display: none;
+    position: relative;
+    top: 150px;
+}
+#reset {
+    width: 58px;
+    height: 50px;
+    background-image: url(/img/reset.png);
+    background-size: 57px 53px;
+    display: block;
+    position: relative;
+    top: 67px;
+    left: 268px;
+    display: none;
+
+}
+#gemv {
+    width: 276px;
+    height: 27px;
+    background-image: url(/img/gameover.png);
+    background-size: 276px 28px;
+    display: block;
+    position: relative;
+    top: -21px;
+    left: 153px;
+    display: none;
+
+}
+#dinoma {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/googe_dno.png);
+    background-size: 50px 50px;
+    position: relative;
+    display: none;
+    top: 150px;
+}
+#dinom {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/ge_dino.png);
+    background-size: 50px 50px;
+    display: none;
+    position: relative;
+    top: 150px;
+}
+#demon {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/demon_dino.png);
+    background-size: 50px 50px;
+    display: none;
+    position: relative;
+    top: 150px;
+}
+#din {
+    width: 48px;
+    height: 49px;
+    background-image: url(/img/offline-sprite-dwx.png);
+    background-size: 47px 50px;
+    display: none;
+    position: relative;
+    top: 114px;
+
+}
+#dont1 {
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    background-image: url(/img/live.png);
+    background-size: 45px 41px;
+    top: 90px;
+    display: none;
+}
+#dont2 {
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    background-image: url(/img/live.png);
+    background-size: 45px 41px;
+    top: 90px;
+    left: 150px;
+    display: none;
+}
+#dont3 {
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    background-image: url(/img/live.png);
+    background-size: 45px 41px;
+    top:  90px;
+    left: 190px;
+    display: none;
+}
+#live1 {
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    background-image: url(/img/live.png);
+    background-size: 45px 41px;
+    top: 90px;
+    display: block;
+}
+#live2 {
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    background-image: url(/img/live.png);
+    background-size: 45px 41px;
+    top: 90px;
+    left: 150px;
+    display: block;
+}
+#live3 {
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    background-image: url(/img/live.png);
+    background-size: 45px 41px;
+    top:  90px;
+    left: 190px;
+    display: block;
+}
+#dinodown {
+    width: 75px;
+    height: 36px;
+    background-image: url(/img/T-Rex_Game._-_Google_Chrome_18.02.2022_8_32_12.png);
+    background-size: 73px 37px;
+    position: relative;
+    top: 165px;
+    display: none;
+
+}
+#demondown {
+    width: 75px;
+    height: 36px;
+    background-image: url(/img/T-Rex_Game..png);
+    background-size: 73px 37px;
+    position: relative;
+    top: 165px;
+    display: none;
+
+}
+#dinoh {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/googe_dno.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    display: none;
+    animation: runn 1s infinite linear;
+}
+#dinow {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/ge_dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    display: none;
+    animation: runn 1s infinite linear;
+}
+#dad {
+    position: absolute;
+    left: 220px;
+    top: 40px;
+    font-size: 30px;
+    
+}
+#www {
+    position: absolute;
+    left: 300px;
+    top: 40px;
+    font-size: 30px;
+   
+}
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(/img/Без\ названия.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    }
+
+.cactusmov {
+    animation: cactusMov 3s infinite linear;
+}
+#f {
+    position: absolute;
+    left: 365px;
+    top: -8px;
+    width: 72px;
+}
+#obloko {
+    position: absolute;
+    left: 684px;
+    top: 111px;
+    width: 86px;
+    height: 25px;
+    background-image: url(/img/x.png);
+    background-size: 78px 28px;
+    animation: cactusMov 17s infinite linear;
+}
+
+#ob {
+    position: absolute;
+    left: 684px;
+    top: 111px;
+    width: 86px;
+    height: 25px;
+    background-image: url(/img/xred.png);
+    background-size: 78px 28px;
+    display: none;
+    animation: cactusMov 17s infinite linear;
+}
+#perever {
+    position: absolute;
+    left: 38px;
+    top: 338px;
+    font-size: 60px;
+}
+ #heal {
+    width: 64px;
+    height: 60px;
+    background-image: url(/img/live.png);
+    background-size: 64px 60px;
+    position: absolute;
+    left: 371px;
+    top: 148px;
+    top: 273px;
+ }   
+ #dheal {
+    width: 64px;
+    height: 60px;
+    background-image: url(/img/dont\ live.png);
+    background-size: 64px 60px;
+    display: none;
+    position: absolute;
+    left: 371px;
+    top: 148px;
+    top: 273px;
+ }  
+#live {
+    width: 44px;
+    display: none;
+    height: 53px;
+    background-image: url(/img/din.png);
+    background-size: 43px 52px;
+    position: absolute;
+    top: 253px;
+    left: 380px;
+    
+}
+#dac {
+    width: 40px;
+    height: 40px;
+    background-image: url(/img/offline-sprited-2x.png);
+    background-size: 41px 40px;
+    position: absolute;
+    left: 665px;
+    top: 146px;
+    opacity: .3;
+    }
+    #d {
+        width: 40px;
+        height: 40px;
+        background-image: url(/img/xred.png);
+        background-size: 41px 40px;
+        position: absolute;
+        left: 665px;
+        top: 146px;
+        opacity: .3;
+        }
+
+.log {
+    display: none;
+}
+.doc {    
+    animation: gor 8s infinite linear;
+ }
+#demod {
+    position: absolute;
+    left: 198px;
+    top: 0px;
+    display: none;
+}
+    .love {
+    animation: love 0.1s infinite linear;
+}
+#hed {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    height: 200px;
+    padding: 200px; /* Поля вокруг текста */
+  border-radius: 25px;
+background: rgb(247, 247, 247); /* Цвет фона */
+}
+#jum {
+    position: absolute;
+    top: -3px;
+    width: -36px;
+    left: 455px;
+    height: -33px;
+    padding: 176px;
+    border-radius: 25px;
+    background: rgb(224,224,224);
+    opacity: .1;
+    
+    
+}
+#sit {
+    position: absolute;
+    top: -3px;
+    width: -36px;
+    left: -6px;
+    height: -33px;
+    padding: 176px;
+    border-radius: 25px;
+    background: rgb(224, 224, 224);
+    opacity: .1;
+    
+    
+}
+#ff {
+    position: absolute;
+    left: 367px;
+    top: 4px;
+    display: none;
+    height: 54px;
+    width: 65px;
+
+
+
+
+
+}
+#cactus1 {
+    width: 30px;
+    height: 33px;
+    background-image: url(/img/1.png);
+    background-size: 29px 30px;
+    position: relative;
+    top: 80px;
+    display: none;
+    left: 695px;
+    animation: cactusMov 2s infinite linear;
+
+}  
+.iv {
+    width: 128px;
+    height: 43px;
+    top: 03px;
+    left: 200px;
+    background: rgb(255, 0, 0);
+    border: 3px solid #fff;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+}
+
+#skins {
+    display: none;
+}
+
+#fe {
+    position: absolute;
+    left: 72px;
+    top: 2px;
+    font-size: 30px;
+
+}
+#qd {
+    position: absolute;
+    left: 135px;
+    top: 233px;
+    display: none;
+
+}
+#af {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    font-size: 30px;
+}
+#fs {
+    position: absolute;
+    left: 527px;
+    top: 85px;
+    font-size: 30px;
+    display: none;
+
+}
+@keyframes gor {
+    0% {
+        left: 665px;
+    }
+    100% {
+        left: 220px;
+    }
+}
+@keyframes love {
+0% {
+    top: 253px;
+}
+80% {
+    top: 290px;
+}
+100% {
+    display: none;
+}
+}
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left:-20px;
+    }
+}
+@keyframes trg {
+    0% {
+        left: 755px;
+    }
+    100% {
+        left:150px;
+    }
+}
+.jump {
+    animation: jump 0.5s linear;
+}
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    10% {
+        top: 140px;
+    }
+    30% {
+        top: 130px;
+    }
+    40% {
+        top: 100px;
+    }
+    50% {
+        top:70px;
+    }
+    60% {
+        top: 100px;
+    }
+    80% {
+        top: 130px;
+    }
+    90% {
+        top: 140px;
+    }
+    100% {
+        top:150px;
+    }
+}
+
+
+#qwe {
+    position: absolute;
+    top:250px;
+    left: 600px;
+    width: 180px;
+    height: 70px;
+    padding: 0px; /* Поля вокруг текста */
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+    display: none;
+    display: none;
+      }
+    #qwe:hover {
+    background-position: right center;
+    }
+    #qw {
+        position: absolute;
+        top:250px;
+        left: 150px;
+        width: 180px;
+        height: 70px;
+        padding: 0px; /* Поля вокруг текста */
+        border-radius: 25px;
+        background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+        background-size: 200% auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+        transition: .5s;
+        display: none;
+          }
+        #qw:hover {
+        background-position: right center;
+        }
+        #eq {
+            position: absolute;
+            left: 90px;
+            top: 70px;
+    font-size: 60px;
+    animation: re 4s infinite linear;
+}
+        @keyframes re {
+
+            0% {
+                transform: rotate(-360deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @media screen and (orientation: portrait) {
+            #ec {
+               display: block;
+                }
+                #log {
+                    display: none;
+                }
+                
+              }
+              @media screen and (orientation:landscape) {
+                #ec {
+                   display: none;
+                    }
+                    #log {
+                        display: block;
+                    }
+                    
+                  }

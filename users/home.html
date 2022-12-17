@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+
+<link rel="stylesheet" href="/usersstyles/stylehome.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/site.webmanifest">
+<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#000000">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="theme-color" content="#ffffff">    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Every</title>
+<script>
+d = localStorage.d
+setTimeout(update,0)
+function update() {
+if (d == 'like') {
+document.getElementById('adki').style.display = 'block'
+document.getElementById('dgt').style.display = 'none'
+document.getElementById('adkii').style.display = 'none'
+document.getElementById('adkiii').style.display = 'none'
+}
+else if (d == 'dz') {
+    document.getElementById('adkii').style.display = 'block'
+document.getElementById('dgt').style.display = 'none'
+document.getElementById('adkiii').style.display = 'none'
+document.getElementById('adki').style.display = 'none'
+}
+
+else if (d == 'd') {
+document.getElementById('adkiii').style.display = 'block'
+document.getElementById('adkii').style.display = 'none'
+document.getElementById('adki').style.display = 'none'
+document.getElementById('dgt').style.display = 'none'
+}
+}
+
+
+
+/*
+        setInterval(function () {
+            $("#nick").text(localStorage.getItem("dw"))
+        },700)
+        */
+        function un() {
+            document.location.replace("/html/index.html")
+        }
+        function Cs() {
+            setTimeout(function () {
+                document.getElementById("avata").style.display = "block"
+            document.getElementById("avatar").style.display = "none"
+            document.getElementById("struktur1").style.display = "none"
+            },1000)
+        
+        }
+        function Notcs() {
+            
+            document.getElementById("struktur1").style.display = "block"
+            document.getElementById("avata").style.display = "none"
+            document.getElementById("avatar").style.display = "block"
+        }
+    </script>
+</head>
+<body >
+
+<div id="struktur1">
+    <div onclick="document.location.replace('/dino/index.html')" class="u" id="hed"></div>
+    <div onclick="afw()" class="u" id="hed1"></div>
+    <div class="u" id="hed2"></div>
+    <div class="u" id="hed3"></div>
+    <div class="u" id="hed4"></div>
+    <div id="hed5"></div>
+    <div id="hed6"></div>
+
+ 
+</div>
+<script>
+
+      
+if (d == "like") {
+  document.getElementById("adki").style.display = "block"
+document.getElementById("adkii").style.display = "none"
+document.getElementById("adkiii").style.display = "none" 
+}        
+if (d == "dz") {
+  document.getElementById("adkii").style.display = "block"
+document.getElementById("adki").style.display = "none"
+document.getElementById("adkiii").style.display = "none"
+}
+if (d == "d") {
+  document.getElementById("adkiii").style.display = "block"
+document.getElementById("adki").style.display = "none"
+document.getElementById("adkii").style.display = "none"
+}
+
+
+</script>
+</head>
+<body>
+<div id="av"></div>
+
+
+<div id="dgt"><img id="gf" src="/icon/like.png" onclick="
+document.getElementById('adki').style.display = 'block'
+document.getElementById('dgt').style.display = 'none'
+document.getElementById('adkii').style.display = 'none'
+document.getElementById('struktur1').style.display = 'block'
+localStorage.d = 'like'
+
+localStorage.d = 'like'
+  ">
+<img id="gff" src="/icon/dz.png" onclick="
+document.getElementById('adkii').style.display = 'block'
+document.getElementById('dgt').style.display = 'none'
+document.getElementById('adkiii').style.display = 'none'
+document.getElementById('adki').style.display = 'none'
+document.getElementById('struktur1').style.display = 'block'
+  localStorage.d = 'dz'
+  ">
+  <img id="gfff" src="/icon/demon_dino.png" onclick="
+document.getElementById('adkiii').style.display = 'block'
+document.getElementById('adkii').style.display = 'none'
+document.getElementById('adki').style.display = 'none'
+document.getElementById('dgt').style.display = 'none'
+document.getElementById('struktur1').style.display = 'block'
+  localStorage.d = 'd'
+  
+  ">
+
+</div>
+<img src="/icon/like.png" id="adki" onclick="
+
+struktur1.style.display = 'none';
+document.getElementById('dgt').style.display = 'block'
+document.getElementById('adki').style.display = 'none'
+
+"> 
+
+
+
+<img src="/icon/dz.png" id="adkii" onclick="
+
+struktur1.style.display = 'none';
+document.getElementById('dgt').style.display = 'block'
+document.getElementById('adki').style.display = 'none'
+
+"> 
+<img src="/icon/demon_dino.png" id="adkiii" onclick="
+
+struktur1.style.display = 'none';
+document.getElementById('dgt').style.display = 'block'
+document.getElementById('adki').style.display = 'none'
+
+"> 
+
+
+ <img class="u" id="avata" onclick="Notcs()" src="/icon/dar.png">
+  <img class="u" id="avatar" onclick="Cs()" src="/icon/dar.png">
+    <h1 id="nick">Maxim</h1>
+   <!-- <div onclick="un()" id="undo"></div>-->
+    
+    <div onclick="un()" id="awdf"><p onclick="dvf()" id="daw">&#8592;</p></div>
+    
+</body>
+</html>

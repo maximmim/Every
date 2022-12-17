@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .game {
+    width: 600px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    height: 200px;
+}
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/googe_dino.png);
+    background-size: 50px 50px;
+    display: block;
+    position: absolute;
+    top: 160px;
+    left:378px;
+    
+}
+.d {animation: r 1s linear;}
+@keyframes r {
+    0% {
+        left: 378px;
+    }
+    100% {
+        left: 494px;
+    }
+}
+#dinoleft {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/googe_dinoda.png);
+    background-size: 50px 50px;
+    display: block;
+    position: absolute;
+    top: 160px;
+    left:194px;
+    display: none;
+}
+#jum {
+    position: absolute;
+    top: -3px;
+    width: -36px;
+    left: 455px;
+    height: -33px;
+    padding: 176px;
+    border-radius: 25px;
+    background: rgb(224,224,224);
+    opacity: .1;
+    
+}
+#sit {
+    position: absolute;
+    top: -3px;
+    width: -36px;
+    left: -6px;
+    height: -33px;
+    padding: 176px;
+    border-radius: 25px;
+    background: rgb(224, 224, 224);
+    opacity: .1;
+    
+    
+}
+#gr {
+    position: absolute;
+    left: 360px;
+    display: none;
+    top: 277px;
+}
+.fa {
+    animation: d 1s linear; ;
+}
+@keyframes d {
+    0% {
+        top: 336px;
+        display: block;
+    }
+    10% {
+        top: 300px;
+        display: block;
+    }
+    100% {
+        top: 277px;
+    }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAD</title>
+
+</head>
+<body>
+    <div onclick="reate();" id="jum"></div>
+    
+    <div onclick="left();"  id="sit"></div>
+    <script>
+        function reate() {
+            document.getElementById("dino").classList.add("d")
+            setTimeout(r,1000)
+            
+            
+        }
+        function r() {
+            document.getElementById("dino").style.left = "494px"
+            document.getElementById("gr").style.display = "block"
+            
+        }
+        
+        function w() {
+        document.location.replace("dialog.html")
+         }
+    </script>
+    <div class="game">
+        <button onclick="w();" id="gr">Говорить</button>
+        <div id="dino"></div>
+        <div id="dinoleft"></div>
+    </div>
+</body>
+</html>

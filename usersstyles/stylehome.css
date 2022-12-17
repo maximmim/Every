@@ -1,0 +1,198 @@
+#avatar {
+    position: absolute;
+    left: 151px;
+    top: 7px;
+    width: 100px;
+    height: 100px;
+}
+
+#av {
+    position: absolute;
+    left: 25px;
+    top: 59px;
+    font-size: 30px;
+}
+#va {
+    position: absolute;
+    left: 14px;
+    top: 22px;
+    font-size: 30px;
+}
+#nick {
+    position: absolute;
+    top: 100px;
+    left: 37%;
+}
+#dgt {
+    position: absolute;
+    width: 300px;
+    background-color:rgb(129, 129, 129);
+    height: 100px;
+    left: 50px;
+    border-radius: 15px;
+    top: 300px;
+    display: none;
+}
+#gf {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    height: 80px;
+    width: 80px;
+}
+#gff {
+    position: absolute;
+    top: 8px;
+    left: 111px;
+    height: 80px;
+    width: 80px;
+}
+#gfff {
+    position: absolute;
+    top: 8px;
+    left: 206px;
+    height: 80px;
+    width: 80px;
+}
+#adki {
+    position: absolute;
+    width: 55px;
+    height: 60px;
+    
+    left: 322px;
+    top: 20px;
+    background-size: -79px 62px;
+    background-image: url(icon/like.png);
+}
+
+#adkii {
+    position: absolute;
+    width: 55px;
+    height: 60px;
+    left: 322px;
+    display: none;
+    top: 20px;
+    background-size: -79px 62px;
+    background-image: url(icon/like.png);
+}
+#adkiii {
+    position: absolute;
+    display: none;
+    width: 55px;
+    height: 60px;
+    left: 322px;
+    top: 20px;
+    background-size: -79px 62px;
+    background-image: url(icon/like.png);
+}
+#undo {
+    position: absolute;
+    left: 0px;
+    top: 717px;
+    width: 387px;
+    height: 107px;
+    background: rgb(190,190,190);
+    background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(255,164,0,1) 66%);
+    border-radius: 25px;
+}
+#struktur1 {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+}
+
+#hed1 {
+    position: absolute;
+    top: 44px;
+    left: 273px;
+    width: 120px;
+    display: none;
+    height: 445px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
+    background-size: 75px 444px;
+    background-image: url(icon/NEW.png);
+}
+#avata {
+    position: absolute;
+    width: 258px;
+    height: 300px;
+    left: 71px;
+    top: 194px;
+    display: none;
+}
+#hed2 {
+    
+    position: absolute;
+    top: 185px;
+    left: 50px;
+    width: 348px;
+    height: 264px;
+    border-radius: 9px;
+    border: 3px /* width */ solid /* style */ rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background-size: 364px 282px;
+    background-image: url(https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg);
+}
+#home {
+    position: absolute;
+    left: 150px;
+    top: 824px;
+    width: 74px;
+    height: 71px;
+    display: none;
+}   
+
+.u {
+    /* … */
+    transition: transform .2s;
+}    .u:hover {
+    transform: scale(1.2);
+}
+#add {
+    position: absolute;
+    left: 270px;
+    top: 827px;
+    width: 66px;
+    display: none;
+    height: 62px;
+
+}
+#hed3 {
+    
+    position: absolute;
+    top: 459px;
+    left: 48px;
+    height: -102px;
+    width: -40px;
+    padding: 175px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border: 3px /* width */ solid /* style */ rgb(0, 0, 0);
+    background-size: 350px 350px;
+    background-image: url(https://i.gifer.com/7TMH.gif);
+}
+
+#awdf {
+    position: absolute;
+    top: 802px;
+    left: 5px;
+    height: 77px;
+    width: 406px;
+    border-radius: 25px;
+    background: rgb(190,190,190);
+background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%);
+}
+#daw {
+    position: absolute;
+    left: 158px;
+    top: -88px;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
