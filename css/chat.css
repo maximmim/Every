@@ -1,0 +1,119 @@
+#fdr {
+
+        width: 163px;
+        height: 39px;
+        position: absolute;
+        left: 25px;
+        top: 200px;
+        text-align: center;
+        line-height: 100px;
+        background-color: #000000;
+        border: 8px solid #000;
+        -webkit-border-radius: 23px;
+        -moz-border-radius: 30px;
+        border-radius: 19px;
+        -webkit-box-shadow: 2px 2px 4px #888;
+        -moz-box-shadow: 2px 2px 4px #888;
+        box-shadow: 2px 2px 4px #888;
+        border-style: solid;
+    
+}
+#dc {
+    position: absolute;
+    top: 231px;
+    left: -12px;
+    display: none;
+}
+#wadc {
+    position: absolute;
+    left: 288px;
+    top: 100px;
+}
+#awv {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+#adb {
+    position: absolute;
+    left: 104px;
+    top: 66px;
+    width: 100px;
+}
+#wdw {
+    position: absolute;
+    top: 127px;
+    left: 148px;
+}
+
+#d {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+
+}
+
+#af {
+    position: absolute;
+    left: 10px;
+    top: 764px;
+    width: 330px;
+    height: 16px;
+}
+#e {
+    position: absolute;
+    left: 24px;
+    top: 741px;
+    font-size: 20px;
+}
+#Eror {
+    position: absolute;
+    left: 48px;
+    top: 169px;
+    display: none;
+}
+#qa {
+    position: absolute;
+    left: 130px;
+    top: 659px;
+    width: 150px;
+    height: 31px;
+}
+#av {
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    height: 450px;
+    width: 406px;
+    border-radius: 25px;
+    background: rgb(167, 168, 170);
+}
+
+#qd {
+    position: absolute;
+    left: 61px;
+    top: -26px;
+    font-size: 40px;
+    
+}
+#qa {
+    font-size: 20px;
+}
+#awdf {
+    position: absolute;
+    top: 802px;
+    left: 5px;
+    height: 77px;
+    width: 406px;
+    border-radius: 25px;
+    background: rgb(0, 89, 255);
+}
+#daw {
+    position: absolute;
+    left: 158px;
+    top: -88px;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}

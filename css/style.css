@@ -1,0 +1,427 @@
+/*
+
+                                   
+      _    _                  .      _    _
+     / \  / \      /\    \ /  |     / \  / \ 
+    /   \/   \    /__\    /   |    /   \/   \
+   /          \  /    \  / \  |   /          \
+*/
+
+
+
+
+/*
+
+
+transform: scale(1.2);
+
+
+ */
+ #awdf {
+    position: absolute;
+    top: 702px;
+    left: -3px;
+    display: none;
+    height: 77px;
+    width: 406px;
+    border-radius: 25px;
+    background: rgb(190,190,190);
+background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%);
+}
+
+
+
+
+
+
+#ggg {
+    position: absolute;
+    top: 100px;
+    display: none;
+}
+#gf {
+    text-align: center;
+}
+#gf2 {
+    text-align: center;
+}
+#gf3 {
+    text-align: center;
+}
+
+#gf4 {
+    text-align: center;
+}
+
+#gg { 
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    display: none;
+    height: 74px;
+    width: 340px;
+    border-radius: 10px;
+    background-color: rgb(88, 88, 88);
+}
+
+#gg2 { 
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    display: none;
+    height: 74px;
+    width: 340px;
+    border-radius: 10px;
+    background-color: rgb(88, 88, 88);
+}
+#gg3 { 
+    position: absolute;
+    top: 300px;
+    left: 40px;
+    display: none;
+    height: 74px;
+    width: 340px;
+    border-radius: 10px;
+    background-color: rgb(88, 88, 88);
+}
+
+#gg4 { 
+    position: absolute;
+    top: 400px;
+    left: 40px;
+    display: none;
+    height: 74px;
+    width: 340px;
+    border-radius: 10px;
+    background-color: rgb(88, 88, 88);
+}
+#baner {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    height: 600px;
+    width: 340px;
+    border-radius: 10px;
+    background-color: rgb(88, 88, 88);
+}
+
+#ew {
+    display: none;
+}
+#cad {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 100px;
+}
+#fv {
+    position: absolute;
+    left: 161px;
+    top: 813px;
+    width: 100px;
+    height: 40px;
+    display: none;
+}
+#struktur1 {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: -10px;
+
+}
+#struktur2 {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: -10px;
+
+}
+
+
+.asv {
+    animation: dw 1 linear;
+}
+@keyframes dw {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(350)
+    }
+}
+#fes {
+    display: none;
+}
+#oa {
+    position: absolute;
+    left: 80px;
+    top: 509px;
+    width: 268px;
+    color: rgb(225, 225, 225);
+    height: 87px;
+    font-size: 50px;
+    display: block;
+    border-radius: 26px;
+    background-color: rgb(0, 0, 0);
+}
+#faw {
+    position: absolute;
+    left: 110px;
+    top: 100px;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+#daw {
+    position: absolute;
+    left: 24%;
+    top: 174px;
+    display: block;
+    width: 210px;
+    height: 35px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+#close {
+    position: absolute;
+    left: 31px;
+    top: 824px;
+    width: 77px;
+    height: 75px;
+    display: none;
+}
+#te {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 50px;
+
+}
+#af {
+    position: absolute;
+    font-size: 25px;
+    left: 30px;
+    top: 10px;
+}
+
+.jo {
+    background-color: rgb(0, 0, 0);
+}
+#hed {
+    position: absolute;
+    top: 44px;
+    left: 45px;
+    height: -102px;
+    width: 123px;
+    padding: 41px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
+    background-size: -320px -347px;
+    background-image: url(/icon/Dino\ -\ Google\ Chrome\ 22.03.2022\ 21_34_17.png);
+}
+
+@keyframes an {
+    0% {
+        top: 40px;
+    }
+
+    100% {
+        top: 620px;
+    }
+
+}
+.animation1 {
+    
+    animation: an 0.3s linear;
+}
+
+
+#dwa {
+    display: block;
+    animation: start 2s linear;
+}
+@keyframes start {
+    0% {
+        opacity: .0;
+    }
+    10% {
+        opacity: .1;
+    }
+    30% {
+        opacity: .2;
+    }
+    50% {
+        opacity: .3;
+    }
+    90% {
+        opacity: .4;
+    }
+    100% {
+        opacity: .70;
+    }
+}
+#hed1 {
+    position: absolute;
+    top: 44px;
+    left: 273px;
+    width: 120px;
+    height: 445px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
+    background-size: 75px 444px;
+    background-image: url(/icon/NEW.png);
+}
+
+
+#dwc {
+    position: absolute;
+    left: 23px;
+}
+
+#hed2 {
+    position: absolute;
+    top: 137px;
+    left: 44px;
+    width: 208px;
+    height: 347px;
+    border-radius: 9px;
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
+    background: rgb(0, 0, 0);
+    background-size: 320px 347px;
+    background-image: url(https://i.ibb.co/Mk1kGqk/fes.jpg);
+}
+
+
+
+#home {
+    position: absolute;
+    left: 150px;
+    top: 824px;
+    width: 74px;
+    height: 71px;
+    display: none;
+}    .u {
+    /* … */
+    transition: transform .2s;
+}    .u:hover {
+    transform: scale(1.2);
+}
+#add {
+    position: absolute;
+    left: 270px;
+    top: 827px;
+    width: 66px;
+    display: none;
+    height: 62px;
+
+}
+#hed3 {
+    position: absolute;
+    top: 496px;
+    left: 43px;
+    height: -102px;
+    width: -40px;
+    padding: 175px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
+    background-size: 320px 347px;
+    background-image: url(/icon/da.jpg);
+}
+#st2hed3 {
+    position: absolute;
+    top: 139px;
+    left: 44px;
+    height: -102px;
+    width: -40px;
+    padding: 170px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border: 3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);
+    background-size: 320px 347px;
+    background-image: url(/icon/da.jpg);
+}
+#st2hed1 {
+    position: absolute;
+    top: 44px;
+    left: 273px;
+    width: 120px;
+    height: 445px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border:
+    3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);  /* color */
+    background-size: 75px 444px;
+    background-image: url(/icon/NEW.png);
+}
+#st2hed2 {
+    position: absolute;
+    top: 497px;
+    left: 44px;
+    width: 208px;
+    height: 347px;
+    border-radius: 9px;
+    border: 3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background-size: 320px 347px;
+    background-image: url(https://i.ibb.co/Mk1kGqk/fes.jpg);
+}
+
+
+#st2hed1 {
+    position: absolute;
+    top: 494px;
+    left: 266px;
+    width: 120px;
+    height: 352px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border: 3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);
+    background-size: 75px 444px;
+    background-image: url(/icon/NEW.png);
+}
+#st2hed {
+    position: absolute;
+    top: 48px;
+    left: 45px;
+    height: -102px;
+    width: 261px;
+    padding: 41px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0);
+    border: 3px       /* width */
+    solid     /* style */
+    rgb(0, 0, 0);
+    background-size: -320px -347px;
+    background-image: url(/icon/logo_dino.png);
+}
