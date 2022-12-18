@@ -19,7 +19,7 @@ transform: scale(1.2);
  */
  #awdf {
     position: absolute;
-    top: 702px;
+    top: 652px;
     left: -3px;
     display: none;
     height: 77px;
@@ -128,6 +128,9 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
     position: absolute;
     top: -40px;
     left: -10px;
+    
+    
+    
 
 }
 #struktur2 {
