@@ -7,6 +7,9 @@
 
 */
 
+ 
+
+
 
 //unblock();
 
@@ -138,6 +141,7 @@ else if (Notification.permission !== "denied") {
     })
 }
 }
+
 
 
 function notu() {
@@ -273,7 +277,7 @@ function frandom()
 }
 
 function random() {
-memas = ["https://i.gifer.com/7TMH.gif","/icon/a.jpg","/icon/gg.png","/icon/dwa.webp","/icon/like.png","/icon/sticker.webp","/icon/images.jpg","https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg"]
+memas = ["https://i.gifer.com/F1oX.gif","https://i.gifer.com/19ps.gif","https://i.gifer.com/XKim.gif","https://i.gifer.com/y7.gif","https://i.gifer.com/7tDC.gif","https://i.gifer.com/4jcE.gif","https://i.gifer.com/VhdI.gif","https://i.gifer.com/PXkM.gif","https://i.gifer.com/7TMH.gif","/icon/a.jpg","/icon/gg.png","/icon/dwa.webp","/icon/like.png","/icon/sticker.webp","/icon/images.jpg","https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg"]
 memash = ["https://i.gifer.com/7TMH.gif","/icon/a.jpg","/icon/dwa.webp","/icon/sticker.webp","https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg"]
 jj = getRandomArrayElement(memash)
 j = getRandomArrayElement(memas)
@@ -288,6 +292,8 @@ document.getElementById("hed2").style.backgroundImage = "url("+jj+")";
 }
 
 document.getElementById("st2hed3").style.backgroundImage = "url("+j+")";
+document.getElementById("st2hed2").style.backgroundImage = "url("+jj+")";
+
 
 
 
@@ -313,7 +319,9 @@ function makeid() {
   
     return text;
   }
-  
+
+
+
 function ceking() 
 
 {
