@@ -126,14 +126,14 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
 #struktur1 {
     display: none;
     position: absolute;
-    top: -30px;
+    top: -40px;
     left: -10px;
 
 }
 #struktur2 {
     display: none;
     position: absolute;
-    top: -30px;
+    top: -40px;
     left: -10px;
 
 }
@@ -184,10 +184,10 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
 }
 #close {
     position: absolute;
-    left: 31px;
-    top: 824px;
-    width: 77px;
-    height: 75px;
+    left: 20px;
+    top: 800px;
+    width: 94px;
+    height: 78px;
     display: none;
 }
 #te {
@@ -314,10 +314,10 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
 
 #home {
     position: absolute;
-    left: 150px;
-    top: 824px;
-    width: 74px;
-    height: 71px;
+    left: 138px;
+    top: 800px;
+    width: 91px;
+    height: 79px;
     display: none;
 }    .u {
     /* … */
@@ -327,11 +327,11 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
 }
 #add {
     position: absolute;
-    left: 270px;
-    top: 827px;
-    width: 66px;
+    left: 250px;
+    top: 800px;
+    width: 93px;
     display: none;
-    height: 62px;
+    height: 79px;
 
 }
 #hed3 {

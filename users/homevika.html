@@ -17,34 +17,147 @@
 
 <title>Every</title>
 <script>
-
-        function un() {
-            document.location.replace("/html/index.html")
-        }
-       function Cs() {
-        setTimeout(function () {
-                document.getElementById("avata").style.display = "block"
-            document.getElementById("avatar").style.display = "none"
-            document.getElementById("struktur1").style.display = "none"
-            },1000)
-        }
-        function Notcs() {
-            document.getElementById("avata").style.display = "none"
-            document.getElementById("avatar").style.display = "block"
-        }
-    </script>
-</head>
-<body>
+    d = localStorage.d
+    setTimeout(update,0)
+    function update() {
+    if (d == 'like') {
+    document.getElementById('adki').style.display = 'block'
+    document.getElementById('dgt').style.display = 'none'
+    document.getElementById('adkii').style.display = 'none'
+    document.getElementById('adkiii').style.display = 'none'
+    }
+    else if (d == 'dz') {
+        document.getElementById('adkii').style.display = 'block'
+    document.getElementById('dgt').style.display = 'none'
+    document.getElementById('adkiii').style.display = 'none'
+    document.getElementById('adki').style.display = 'none'
+    }
     
-<div id="struktur1">
-    <div onclick="document.location.replace('/dino/index.html')" class="u" id="hed"></div>
-    <div onclick="afw()" class="u" id="hed1"></div>
-    <div class="u" id="hed2"></div>
-    <div class="u" id="hed3"></div>
-    <div class="u" id="hed4"></div>
-    <div id="hed5"></div>
-    <div id="hed6"></div>
-</div>
+    else if (d == 'd') {
+    document.getElementById('adkiii').style.display = 'block'
+    document.getElementById('adkii').style.display = 'none'
+    document.getElementById('adki').style.display = 'none'
+    document.getElementById('dgt').style.display = 'none'
+    }
+    }
+    
+    
+    
+    /*
+            setInterval(function () {
+                $("#nick").text(localStorage.getItem("dw"))
+            },700)
+            */
+            function un() {
+                document.location.replace("/html/index.html")
+            }
+            function Cs() {
+                setTimeout(function () {
+                    document.getElementById("avata").style.display = "block"
+                document.getElementById("avatar").style.display = "none"
+                document.getElementById("struktur1").style.display = "none"
+                },1000)
+            
+            }
+            function Notcs() {
+                
+                document.getElementById("struktur1").style.display = "block"
+                document.getElementById("avata").style.display = "none"
+                document.getElementById("avatar").style.display = "block"
+            }
+        </script>
+    </head>
+    <body >
+    
+    <div id="struktur1">
+        <div onclick="document.location.replace('/dino/index.html')" class="u" id="hed"></div>
+
+        <div class="u" id="hed4"></div>
+        <div id="hed5"></div>
+        <div id="hed6"></div>
+    
+     
+    </div>
+    <script>
+    
+          
+    if (d == "like") {
+      document.getElementById("adki").style.display = "block"
+    document.getElementById("adkii").style.display = "none"
+    document.getElementById("adkiii").style.display = "none" 
+    }        
+    if (d == "dz") {
+      document.getElementById("adkii").style.display = "block"
+    document.getElementById("adki").style.display = "none"
+    document.getElementById("adkiii").style.display = "none"
+    }
+    if (d == "d") {
+      document.getElementById("adkiii").style.display = "block"
+    document.getElementById("adki").style.display = "none"
+    document.getElementById("adkii").style.display = "none"
+    }
+    
+    
+    </script>
+    </head>
+    <body>
+    <div id="av"></div>
+    
+    
+    <div id="dgt"><img id="gf" src="/icon/like.png" onclick="
+    document.getElementById('adki').style.display = 'block'
+    document.getElementById('dgt').style.display = 'none'
+    document.getElementById('adkii').style.display = 'none'
+    document.getElementById('struktur1').style.display = 'block'
+    localStorage.d = 'like'
+    
+    localStorage.d = 'like'
+      ">
+    <img id="gff" src="/icon/dz.png" onclick="
+    document.getElementById('adkii').style.display = 'block'
+    document.getElementById('dgt').style.display = 'none'
+    document.getElementById('adkiii').style.display = 'none'
+    document.getElementById('adki').style.display = 'none'
+    document.getElementById('struktur1').style.display = 'block'
+      localStorage.d = 'dz'
+      ">
+      <img id="gfff" src="/icon/demon_dino.png" onclick="
+    document.getElementById('adkiii').style.display = 'block'
+    document.getElementById('adkii').style.display = 'none'
+    document.getElementById('adki').style.display = 'none'
+    document.getElementById('dgt').style.display = 'none'
+    document.getElementById('struktur1').style.display = 'block'
+      localStorage.d = 'd'
+      
+      ">
+    
+    </div>
+    <img src="/icon/like.png" id="adki" onclick="
+    
+    struktur1.style.display = 'none';
+    document.getElementById('dgt').style.display = 'block'
+    document.getElementById('adki').style.display = 'none'
+    
+    "> 
+    
+    
+    
+    <img src="/icon/dz.png" id="adkii" onclick="
+    
+    struktur1.style.display = 'none';
+    document.getElementById('dgt').style.display = 'block'
+    document.getElementById('adki').style.display = 'none'
+    
+    "> 
+    <img src="/icon/demon_dino.png" id="adkiii" onclick="
+    
+    struktur1.style.display = 'none';
+    document.getElementById('dgt').style.display = 'block'
+    document.getElementById('adki').style.display = 'none'
+    
+    "> 
+    
+    
     <img class="u" id="avata" onclick="Notcs()" src="/icon/a.jpg">
     <img class="u" id="avatar" onclick="Cs()" src="/icon/a.jpg">
     <h1 id="nick">Vika</h1>

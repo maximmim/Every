@@ -10,8 +10,12 @@
 
 //unblock();
 
+let svd = ["Привіт","Hi", "Hallo","Përshëndetje","Привет","Hola","Ahoj","Bonjour","أهلا","Χαίρετε","Ciao","добры дзень","Здравейте","Ndewo ebe ahụ","haai daar","Salaamu caleykum","Sveiki","안녕","ሃይ እንዴት ናችሁ","ሃይ እንዴት ናችሁ"]
 
+setInterval(function () {
+$("#te").text(getRandomArrayElement(svd))
 
+  },3600)
 
 
 function fstr2() {
@@ -40,6 +44,32 @@ function fstr1() {
     document.getElementById("baner").style.display = "none"
 }
 
+
+function afstr2() {
+    document.getElementById("struktur1").style.display = "none"
+    document.getElementById("home").style.display = "block"
+    document.getElementById("struktur2").style.display = "block"
+    document.getElementById("dwa").style.display = "none"
+    document.getElementById("add").style.display = "block"
+    document.getElementById("close").style.display = "block"
+    document.getElementById("te").style.display = "none"
+    document.getElementById("baner").style.display = "none"
+}
+
+
+
+
+
+function afstr1() {
+    document.getElementById("struktur2").style.display = "none"
+    document.getElementById("home").style.display = "block"
+    document.getElementById("struktur1").style.display = "block"
+    document.getElementById("dwa").style.display = "none"
+    document.getElementById("add").style.display = "block"
+    document.getElementById("close").style.display = "block"
+    document.getElementById("te").style.display = "none"
+    document.getElementById("baner").style.display = "none"
+}
 
 
 
@@ -156,6 +186,7 @@ function getRandomArrayElement(arr){
     if(p == -1) {
 document.getElementById("home").style.display = "none"
 document.getElementById("struktur1").style.display = "none"
+document.getElementById("struktur2").style.display = "none"
 document.getElementById("dwa").style.display = "block"
 document.getElementById("add").style.display = "none"
 document.getElementById("close").style.display = "none"
@@ -178,13 +209,85 @@ document.getElementById("te").style.display = "block"
 }
 
 
+
+function cekinf() {
+    if (j == "https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg") {
+        document.location.replace("/users/home.html")
+    }
+    if (jj == "https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg") {
+        document.location.replace("/users/home.html")
+    }
+
+
+
+    if (j === "https://i.gifer.com/7TMH.gif" )
+    {
+        document.location.replace("/users/home.html")
+    }
+    if (jj === "https://i.gifer.com/7TMH.gif") {
+        document.location.replace("/users/home.html")
+    }
+
+
+
+    if (j == "/icon/a.jpg") 
+    {   
+        document.location.replace("/users/homevika.html")
+    }
+    if (jj == "/icon/a.jpg") {
+        document.location.replace("/users/homevika.html")
+    }
+    
+}
+
+function frandom() 
+{
+    memas = ["https://i.gifer.com/7TMH.gif","/icon/a.jpg","/icon/gg.png","/icon/dwa.webp","/icon/like.png","/icon/sticker.webp","/icon/images.jpg","https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg"]
+    memash = ["https://i.gifer.com/7TMH.gif","/icon/a.jpg","/icon/dwa.webp","/icon/sticker.webp","https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg"]
+    jj = getRandomArrayElement(memash)
+    j = getRandomArrayElement(memas)    
+    
+    if (j == jj) {
+    jj = getRandomArrayElement(memash)
+    j = getRandomArrayElement(memas)
+    document.getElementById("hed3").style.backgroundImage = "url("+j+")";
+    document.getElementById("hed2").style.backgroundImage = "url("+jj+")";
+    }
+
+
+    document.getElementById("hed3").style.backgroundImage = "url("+j+")";
+    document.getElementById("hed2").style.backgroundImage = "url("+jj+")";
+    
+
+    
+    document.getElementById("st2hed3").style.backgroundImage = "url("+j+")";
+    
+    str = ["str1","str2"]
+    h = getRandomArrayElement(str)
+    if (h == "str1") {
+        afstr1()
+    }
+    if (h == "str2") {
+        afstr2()
+    }
+}
+
 function random() {
-memas = ["/icon/a.jpg","/icon/gg.png","/icon/like.png","/icon/images.jpg"]
-document.getElementById("hed3").style.backgroundImage = "url("+getRandomArrayElement(memas)+")";
+memas = ["https://i.gifer.com/7TMH.gif","/icon/a.jpg","/icon/gg.png","/icon/dwa.webp","/icon/like.png","/icon/sticker.webp","/icon/images.jpg","https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg"]
+memash = ["https://i.gifer.com/7TMH.gif","/icon/a.jpg","/icon/dwa.webp","/icon/sticker.webp","https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg"]
+jj = getRandomArrayElement(memash)
+j = getRandomArrayElement(memas)
+document.getElementById("hed3").style.backgroundImage = "url("+j+")";
+document.getElementById("hed2").style.backgroundImage = "url("+jj+")";
 
+if (j == jj) {
+jj = getRandomArrayElement(memash)
+j = getRandomArrayElement(memas)
+document.getElementById("hed3").style.backgroundImage = "url("+j+")";
+document.getElementById("hed2").style.backgroundImage = "url("+jj+")";
+}
 
-
-document.getElementById("st2hed3").style.backgroundImage = "url("+getRandomArrayElement(memas)+")";
+document.getElementById("st2hed3").style.backgroundImage = "url("+j+")";
 
 
 
@@ -197,13 +300,26 @@ if (h == "str2") {
     fstr2()
 }
 }
+
+
 setTimeout(random, 100)
 
-
+function makeid() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  
+    for (var i = 0; i < 5; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+  
+    return text;
+  }
+  
 function ceking() 
 
 {
 
+var id = makeid()
+localStorage.setItem("id",id)
 
 
 localStorage.daw = true;
