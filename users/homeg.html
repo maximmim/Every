@@ -17,8 +17,24 @@
 
 <title>Every</title>
 <script>
+    
+    function wadc()  {
+document.getElementById("avatar").style.backgroundImage = "url("+localStorage.avatarurl+")";
+    }     
+    
+    function setings() {
+        document.getElementById("daw1").style.display = "block"
+        document.getElementById("regbut1").style.display = "block"
+        document.getElementById("imgs1").style.display = "block"
+        document.getElementById("imgs2").style.display = "block"        
+        document.getElementById("imgs3").style.display = "block"
+    localStorage.h = "true"
+    }
         setInterval(function () {
             $("#nick").text(localStorage.getItem("dw"))
+            document.getElementById("avatar").style.backgroundImage = "url("+localStorage.avatarurl+")";
+        
+        
         },400)
         function un() {
             document.location.replace("/html/index.html")
@@ -28,13 +44,61 @@
                 document.getElementById("avata").style.display = "block"
             document.getElementById("avatar").style.display = "none"
             document.getElementById("struktur1").style.display = "none"
+            document.getElementById("avata").style.backgroundImage = "url("+localStorage.avatarurl+")";
+            
             },1000)
         }
         function Notcs() {
             document.getElementById("avata").style.display = "none"
             document.getElementById("avatar").style.display = "block"
+            
+
         }
+        function startupavata() {
+            localStorage.avatarurl = document.getElementById('daw1').value
+            document.getElementById("avatar").style.backgroundImage = "url("+localStorage.avatarurl+")";  
+            document.getElementById("daw1").style.display = "none"
+        document.getElementById("regbut1").style.display = "none"
+        document.getElementById("imgs1").style.display = "none"
+        document.getElementById("imgs2").style.display = "none"        
+        document.getElementById("imgs3").style.display = "none"
+        }
+        
+
+
+        function jb1() {
+            document.getElementById("avatar").style.backgroundImage = "url("+"/icon/hamster.jpg"+")";  
+            localStorage.avatarurl = "/icon/hamster.jpg"
+
+            document.getElementById("daw1").style.display = "none"
+        document.getElementById("regbut1").style.display = "none"
+        document.getElementById("imgs1").style.display = "none"
+        document.getElementById("imgs2").style.display = "none"        
+        document.getElementById("imgs3").style.display = "none"
+        }
+        function jb2() {
+            document.getElementById("avatar").style.backgroundImage = "url("+"/icon/gg.png"+")";  
+            localStorage.avatarurl = "/icon/gg.png"
+
+            document.getElementById("daw1").style.display = "none"
+        document.getElementById("regbut1").style.display = "none"
+        document.getElementById("imgs1").style.display = "none"
+        document.getElementById("imgs2").style.display = "none"        
+        document.getElementById("imgs3").style.display = "none"
+        }
+        function jb3() {
+            document.getElementById("avatar").style.backgroundImage = "url("+"/icon/sticker.webp"+")";  
+            localStorage.avatarurl = "/icon/sticker.webp"
+
+            document.getElementById("daw1").style.display = "none"
+        document.getElementById("regbut1").style.display = "none"
+        document.getElementById("imgs1").style.display = "none"
+        document.getElementById("imgs2").style.display = "none"        
+        document.getElementById("imgs3").style.display = "none"
+        }
+
     </script>
+
 </head>
 <body>
     
@@ -44,11 +108,20 @@
     <div class="u" id="hed2"></div>
     <div class="u" id="hed3"></div>
     <div class="u" id="hed4"></div>
-    <div id="hed5"></div>
+    <div id="hed5"></div>    
     <div id="hed6"></div>
 </div>
-    <img class="u" id="avata" onclick="Notcs()" src="/icon/da.jpg">
-    <img class="u" id="avatar" onclick="Cs()" src="/icon/da.jpg">
+<div id="lolreg">
+    <button id="regbut1" onclick="startupavata()" class="oa">Задати</button>
+    <input placeholder="Веди посиланя на аватар" id="daw1">
+    <img onclick="jb1()" src="/icon/hamster.jpg" id="imgs1">
+    <img onclick="jb2()" src="/icon/gg.png" id="imgs2">
+    <img onclick="jb3()" src="/icon/sticker.webp" id="imgs3">
+
+</div>
+    <img src="/icon/setings.png" onclick="setings()" id="seting"> 
+    <div class="u" id="avata" onclick="Notcs()"></div>
+    <div class="u" id="avatar" onclick="Cs()"></div>
     <h1 id="nick">______</h1>
     
    <!-- <div onclick="un()" id="undo"></div>-->

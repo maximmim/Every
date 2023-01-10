@@ -2,8 +2,8 @@
 <html lang="ua">
 <head>
     <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+<link rel="icon" type="/image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+<link rel="icon" type="/image/png" sizes="16x16" href="/icon/favicon-16x16.png">
 <link rel="manifest" href="/icon/site.webmanifest">
 <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#000000">
 <meta name="msapplication-TileColor" content="#603cba">
@@ -16,7 +16,31 @@
     <title>Every</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
+    <script>
+    
+/*
+    function checkOnlineState(){
+  if (navigator.onLine){
+    
+  } else {
+   
+    alert('Вибачте в вас немає зйєднаня з інтернетом :('); 
+    document.getElementById("home").style.display = "none"
+      document.getElementById("struktur1").style.display = "none"
+      document.getElementById("struktur2").style.display = "none"
+      document.getElementById("Ero").style.display = "none"
+      document.getElementById("add").style.display = "none"
+      document.getElementById("close").style.display = "none"
+      document.getElementById("awl").style.display = "none"
+      document.getElementById("tutor").style.display = "none"    
+      document.getElementById('Eror').style.display = 'block';  
+}
+}
+window.addEventListener('online',  checkOnlineState);
 
+checkOnlineState();
+*/
+    </script>
 <!--  _    _                  .      _    _
      / \  / \      /\    \ /  |     / \  / \ 
     /   \/   \    /__\    /   |    /   \/   \
@@ -24,15 +48,23 @@
 -->
 </head>
 
+<div id="register">
 
+<input placeholder="Веди своє імя" id="daw1">
 
+<button id="regbut1" onclick="cekin()" class="oa">Зарегеструвати</button>
+
+</div>
 <div id="dwa">
 
 <div id="ew">
     <input id="cad">
 </div>
 
+
+
 <div id="awl">
+
     <div id="baner"></div>
     <button id="fv" onclick="aww()">BAG</button>
 </div>
@@ -43,8 +75,9 @@
 </div>
 <body>
 
-<video id="fes" controls src="https://rr3---sn-2gb7sn7r.c.drive.google.com/videoplayback?expire=1648409583&ei=r4NAYtG0N9W3wtQPprO-qA0&ip=217.66.189.14&cp=QVRJWkVfWFVWRFhPOkpOb1pvaFBoMEJ3SzVqTG5BM1RuN3lTSC04eGRzeUx4UXhDM0ZHMktJakk&id=119928877e9243c3&itag=18&source=webdrive&requiressl=yes&mh=RV&mm=32&mn=sn-2gb7sn7r&ms=su&mv=u&mvi=3&pl=23&ttl=transient&susc=dr&driveid=1CXA_8-DdlRJQC6teRUVujLyBMFCsbpB-&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=10.240&lmt=1647941305464367&mt=1648394887&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRAIgKQ4D1dlYWX7gb3WspvN8Rykt-2mnFpQkfWWrH87dJskCIAYlW1agq0RodPSSp3gnAwM7CuFoyV9z1n2n8wRfTPQv&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAJikCOP0Y46okwX03EErqdpxrZbp8Pa8OBdopmIqzDTCAiEA1B0h9roBimcVrECkmSsr6KQUIvvQXGb8mFuGjxdZ1co=&cpn=Qb6V4i2oGpdGAvql&c=WEB_EMBEDDED_PLAYER&cver=1.20220323.01.00"></video>
- 
+<!--<video id="fes" controls src="https://rr3---sn-2gb7sn7r.c.drive.google.com/videoplayback?expire=1648409583&ei=r4NAYtG0N9W3wtQPprO-qA0&ip=217.66.189.14&cp=QVRJWkVfWFVWRFhPOkpOb1pvaFBoMEJ3SzVqTG5BM1RuN3lTSC04eGRzeUx4UXhDM0ZHMktJakk&id=119928877e9243c3&itag=18&source=webdrive&requiressl=yes&mh=RV&mm=32&mn=sn-2gb7sn7r&ms=su&mv=u&mvi=3&pl=23&ttl=transient&susc=dr&driveid=1CXA_8-DdlRJQC6teRUVujLyBMFCsbpB-&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=10.240&lmt=1647941305464367&mt=1648394887&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRAIgKQ4D1dlYWX7gb3WspvN8Rykt-2mnFpQkfWWrH87dJskCIAYlW1agq0RodPSSp3gnAwM7CuFoyV9z1n2n8wRfTPQv&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAJikCOP0Y46okwX03EErqdpxrZbp8Pa8OBdopmIqzDTCAiEA1B0h9roBimcVrECkmSsr6KQUIvvQXGb8mFuGjxdZ1co=&cpn=Qb6V4i2oGpdGAvql&c=WEB_EMBEDDED_PLAYER&cver=1.20220323.01.00"></video>
+-->
+
 <div id="dwc">
     <img id="home" onclick="home()" src="/icon/home.png">
     <img id="add" onclick="frandom()" src="/icon/1add.png">
@@ -118,6 +151,48 @@
 -->
 
 
+<div id="Ero">
+
+    <h1>Eror 678</h1>
+    <h2>Internet connection error</h2>
+</div>
+
+
+<div id="tutor">
+<h1 id="ttext1">Гарного дня в Every
+
+
+
+
+
+
+</h1>
+
+<h1 id="akui">В вас є акаунт ? </h1>
+
+<h1 id="ttext1x1">
+
+    ви тут перший раз ?
+</h1>
+
+<img id="timg1" src="/icon/Tutor1.png">
+<img id="timg2" src="/icon/Tutor2.png">
+<img id="timg3" src="/icon/Tutor3.png">
+<img onclick="og()" id="timg4" src="/icon/Tutor4.png">
+<button onclick="skip()" id="tbutg1" class="oa">Дале</button>
+<button onclick="ski()" id="tbutgw1" class="oa">Пропустити</button>
+<button onclick="skip1()" id="tbutg2" class="oa">Дале</button>
+
+<button onclick="skip2()" id="tbutg3" class="oa">Дале</button>
+
+<button onclick="skip3()" id="tbutg4" class="oa">Дале</button>
+
+<button onclick="skibyes()" id="tbut1" class="oa">yes</button>
+<button onclick="skibno()" id="tbut2" class="oa">no</button>
+
+<button onclick="tskibyes()" id="ttbut1" class="oa">yes</button>
+<button onclick="tskibno()" id="ttbut2" class="oa">no</button>
+</div>
 
     
 </body>

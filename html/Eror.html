@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eror </title>
+    <style>
+        #Eror {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        #er {
+            position: absolute;
+            top: 500px;
+            left: 100px;
+            
+        }
+    </style>
+    <script>function checkOnlineState(){
+        if (navigator.onLine){
+          document.location.replace("index.html")
+        } else {
+        //alert('Вибачте в вас немає зйєднаня з інтернетом :('); 
+        
+        }
+      }
+      window.addEventListener('online',  checkOnlineState);
+      
+    
+    setInterval(checkOnlineState,10)
+    
+    </script>
+</head>
+<body>
+    <h1 style="position: absolute;
+    left: 160px;
+    top: 0px;">Eror 678</h1>
+    <img id="Eror" src="/icon/Eror.png">
+    <div id="er">
+ 
+
+    
+
+    </div> 
+       <h2 style="position: absolute;
+    left: 80px;
+    top: 80px; "> Internet connection error</h2>
+</body>
+</html>
