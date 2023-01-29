@@ -1,9 +1,128 @@
+
+
+#dialog1{
+    position: absolute;
+    top: 255px;
+    left: 124px;
+}
+
+#dialog2{
+    position: absolute;
+    top: 255px;
+    left: 94px;
+    display: none;
+}
+
+#dialog3{
+    position: absolute;
+    top: 255px;
+    left: 114px;
+    display: none;
+}
+
+
+#bdialog3{
+    position: absolute;
+    top: 339px;
+    left: 102px;
+position: absolute;
+    color: white;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    display: none;
+}
+
+
+
+#bdialog4{
+    position: absolute;
+    top: 392px;
+    left: 80px;
+    position: absolute;
+    color: white;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    display: none;
+}
+
+
+#bdialog1{
+    position: absolute;
+    top: 339px;
+    left: 102px;
+position: absolute;
+    color: white;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    display: inline-block;
+}
+
+
+
+#bdialog2{
+    position: absolute;
+    top: 392px;
+    left: 177px;
+    position: absolute;
+    color: white;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #avatar {
     position: absolute;
     left: 151px;
     top: 7px;
     width: 100px;
     height: 100px;
+    border-radius: 12px;
 }
 #av {
     position: absolute;
@@ -125,6 +244,7 @@
     left: 60px;
     top: 194px;
     display: none;
+    border-radius: 12px;
 }
 #hed2 {
     

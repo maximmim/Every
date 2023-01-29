@@ -40,10 +40,33 @@
     document.getElementById('dgt').style.display = 'none'
     }
     }
-    
-    
-    
-    /*
+
+    function bd1() {
+      document.getElementById("dialog1").style.display="none"
+      document.getElementById("dialog2").style.display="block"
+      document.getElementById("bdialog1").style.display="none"
+      document.getElementById("bdialog2").style.display="none"
+      document.getElementById("bdialog3").style.display="block"
+      document.getElementById("dialog1").style.display="none"
+      document.getElementById("dialog3").style.display="none"
+
+      document.getElementById("bdialog4").style.display="none"
+    }
+    function bd2() {
+      document.getElementById("dialog1").style.display="none"
+      document.getElementById("dialog3").style.display="block"
+      document.getElementById("bdialog1").style.display="none"
+      document.getElementById("bdialog2").style.display="none"
+      document.getElementById("bdialog4").style.display="block"
+    }
+
+    function bd3() {
+      alert("Я небуду лютитися якщо ти підеш до листів А4 та не прочітаеш.....")
+    }
+
+
+
+    /*  
             setInterval(function () {
                 $("#nick").text(localStorage.getItem("dw"))
             },700)
@@ -67,7 +90,48 @@
             }
         </script>
     </head>
-    <body >
+    <body>
+
+    <h1 id="dialog1">Як справи ?</h1>
+    <h2 id="dialog2">Пробач я незнав ╯︿╰</h2>
+    <h2 id="dialog3">Ну ок я пішов</h2>
+
+
+    <button onclick="bd2()" id="bdialog2">Гарно!!</button>
+    <button onclick ="bd1()"id="bdialog1">В мене день народженя (☞ﾟヮﾟ)☞</button>
+    <button onclick="bd3()" id="bdialog3">ЗРЯ ТИ ЗАБУВ(►__◄) !</button>
+    <button onclick ="bd1()"id="bdialog4">Але в мене день народженя (☞ﾟヮﾟ)☞</button>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <div id="struktur1">
         <div onclick="document.location.replace('/dino/index.html')" class="u" id="hed"></div>

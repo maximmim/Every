@@ -19,6 +19,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
     <script>
+password = "Everlivetrue"
+
+        function wac() {
+            document.getElementById('fe').style.display = 'none';
+            document.getElementById('av').style.display = 'none';
+            document.getElementById('qa').style.display = 'none';
+            document.getElementById('pl').style.display = 'none';
+            document.getElementById('daw1').style.display = 'block';
+            document.getElementById('regbut1').style.display = 'block';
+
+
+        }
+
+        function cekin() {
+            if (document.getElementById('daw1').value == password) {
+                alert("Це пасхалка 'Завжди живи правдою'")
+            }else {
+                alert("'Завжди живи правдою'")
+            }
+            
+        }
+
         function wdaw() {
 
     
@@ -33,7 +55,11 @@ $("#fe").text("Це ваш id: " + localStorage.id)
 
         
     </script>
+
+
+
 </head>
+
 <body>
 
     <h1 id="fe">____</h1>
@@ -47,8 +73,14 @@ $("#fe").text("Це ваш id: " + localStorage.id)
     </p></div>
     <button onclick="wdaw()" id="qa">0000</button>
     <img id="Eror" src="/icon/Eror.png">
-
     
+    <button id="regbut1" onclick="cekin()" class="oa">Зарегеструвати</button>
+
+    <img onclick="wac()" id="pl" src="/icon/setings.png">
     </div>
+    <input placeholder="Веди код " id="daw1">
+
+
+
 </body>
 </html>

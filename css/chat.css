@@ -1,3 +1,46 @@
+
+
+#pl {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 546px;
+    left: 155px;
+}
+
+#regbut1 {
+    position: absolute;
+    top: 485px;
+    left: 17px;
+    display: none;
+
+
+}
+
+#daw1 {
+    position: absolute;
+    left: 24%;
+    top: 174px;
+    display: none;
+    width: 210px;
+    height: 35px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+
+.oa {
+    position: absolute;
+    color: rgb(225, 225, 225);
+    font-size: 50px;
+    display: block;
+    border-radius: 26px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
 #fdr {
 
         width: 163px;

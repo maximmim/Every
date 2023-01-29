@@ -4,6 +4,7 @@
     top: 7px;
     width: 150px;
     height: 100px;
+    border-radius: 12px;border-radius: 12px;
 }
 
 #av {
@@ -125,6 +126,7 @@
     height: 300px;
     left: -30px;
     top: 194px;
+    border-radius: 12px;
     display: none;
 }
 #hed2 {
@@ -138,7 +140,7 @@
     border: 3px /* width */ solid /* style */ rgb(0, 0, 0);
     background: rgb(0, 0, 0);
     background-size: 364px 282px;
-    background-image: url(https://memepedia.ru/wp-content/uploads/2019/01/hamster.jpg);
+    background-image: url(/icon/hamster.jpg);
 }
 #home {
     position: absolute;

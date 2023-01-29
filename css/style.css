@@ -272,7 +272,7 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
     position: absolute;
     top: -40px;
     left: -10px;
-    
+    padding: 10px;
     
     
 
@@ -282,7 +282,8 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
     position: absolute;
     top: -40px;
     left: -10px;
-
+    padding: 10px;
+    
 }
 
 
@@ -313,16 +314,15 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
     background-color: rgb(0, 0, 0);
 }
 #regbut1 {
-    position: absolute;
-    left: 32px;
-    top: 509px;
-    width: 380px;
-    color: rgb(225, 225, 225);
-    height: 87px;
-    font-size: 50px;
     display: none;
-    border-radius: 26px;
-    background-color: rgb(0, 0, 0);
+    top: 509px;
+    position: absolute;
+    color: white;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
 }
 .oa {
     position: absolute;
@@ -364,7 +364,7 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
 #close {
     position: absolute;
     left: 20px;
-    top: 800px;
+    bottom: 0px;
     width: 94px;
     height: 78px;
     display: none;
@@ -470,7 +470,8 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
 
 #dwc {
     position: absolute;
-    left: 23px;
+    left: 28px;
+    top: 889px;
 }
 
 #hed2 {
@@ -494,7 +495,7 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
 #home {
     position: absolute;
     left: 138px;
-    top: 800px;
+    bottom: 0px;
     width: 91px;
     height: 79px;
     display: none;
@@ -507,7 +508,7 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
 #add {
     position: absolute;
     left: 250px;
-    top: 800px;
+    bottom: 0px;
     width: 93px;
     display: none;
     height: 79px;
@@ -604,3 +605,4 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
     background-size: -320px -347px;
     background-image: url(/icon/logo_dino.png);
 }
+

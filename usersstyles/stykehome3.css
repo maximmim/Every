@@ -96,6 +96,7 @@
     height: 100px;
     background-size: 100px 100px;
     background-image: url("/icon/da.jpg");
+    border-radius: 12px;
     
 }
 
@@ -221,6 +222,7 @@
     display: none;
     background-size: 358px 300px ;
     background-image: url("/icon/da.jpg");
+    border-radius: 12px;
     
 }
 #hed2 {

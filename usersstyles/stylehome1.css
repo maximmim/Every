@@ -3,6 +3,7 @@
     left: 151px;
     top: 7px;
     width: 100px;
+    border-radius: 12px;
     height: 100px;
 }
 
@@ -184,6 +185,7 @@
     left: 78px;
     top: 194px;
     display: none;
+    border-radius: 12px;
 }
 #hed3 {
     display: none;

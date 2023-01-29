@@ -11,6 +11,8 @@
 
 
 
+
+
 //unblock();
 
 let svd = ["Привіт","Hi", "Hallo","Përshëndetje","Привет","Hola","Ahoj","Bonjour","أهلا","Χαίρετε","Ciao","добры дзень","Здравейте","Ndewo ebe ahụ","haai daar","Salaamu caleykum","Sveiki","안녕","ሃይ እንዴት ናችሁ","ሃይ እንዴት ናችሁ"]
@@ -141,6 +143,7 @@ else if (Notification.permission !== "denied") {
     })
 }
 }
+
 
 
 
@@ -372,6 +375,7 @@ function Eror_network() {
 }
 
 
+
 function checkOnlineState(){
     if (navigator.onLine){
       console.log("confirm")
@@ -383,10 +387,9 @@ function checkOnlineState(){
   window.addEventListener('online',  checkOnlineState);
   
 
-setInterval(checkOnlineState,10)
+//setInterval(checkOnlineState,10)
 
 
- 
 function home() {
     if (localStorage.getItem('daw') == "true"){
         document.location.replace("/users/homeg.html")
@@ -441,14 +444,13 @@ document.getElementById("close").style.display = "none"
 
 }
 
-function cekinf() {
+function cekinf() {;;;
     if (j == "/icon/hamster.jpg") {
         document.location.replace("/users/home.html")
     }
     if (jj == "/icon/hamster.jpg") {
         document.location.replace("/users/home.html")
     }
-
 
 
     if (j === "/icon/7TMH.webp" )
@@ -460,6 +462,15 @@ function cekinf() {
     }
 
 
+
+    if (j === "/icon/dwa.webp" )
+    {
+        document.location.replace("/users/homevika.html")
+    }
+    if (jj === "/icon/dwa.webp") {
+        document.location.replace("/users/homevika.html")
+    }
+
     if (j == "/icon/a.jpg") 
     {   
         document.location.replace("/users/homevika.html")
@@ -467,24 +478,32 @@ function cekinf() {
     if (jj == "/icon/a.jpg") {
         document.location.replace("/users/homevika.html")
     }
+
     
 }
+function cekinpreson(ids){
 
-
+    ids()
+    console.log(ids)
+    
+    //document.location.replace(ids)
+}
 
 function frandom() 
-{
+{   urlg = "https://i.gifer.com/"+maked()+".gif"
     memas = ["/icon/7TMH.webp","/icon/a.jpg","/icon/gg.png","/icon/dwa.webp","/icon/like.png","/icon/sticker.webp","/icon/images.jpg","/icon/hamster.jpg"]
     memash = ["/icon/7TMH.webp","/icon/a.jpg","/icon/dwa.webp","/icon/sticker.webp","/icon/hamster.jpg"]
+
     jj = getRandomArrayElement(memash)
     j = getRandomArrayElement(memas)    
-    
+
     if (j = jj) {
     jj = getRandomArrayElement(memash)
     j = getRandomArrayElement(memas)
     document.getElementById("hed3").style.backgroundImage = "url("+j+")";
     document.getElementById("hed2").style.backgroundImage = "url("+jj+")";
     }
+
 
 
     document.getElementById("hed3").style.backgroundImage = "url("+j+")";
@@ -504,36 +523,44 @@ function frandom()
     }
 }
 function random() {
-memas = ["/icon/7TMH.webp","https://i.gifer.com/19ps.gif","https://i.gifer.com/XKim.gif","https://i.gifer.com/y7.gif","https://i.gifer.com/7tDC.gif","https://i.gifer.com/4jcE.gif","https://i.gifer.com/VhdI.gif","https://i.gifer.com/PXkM.gif","https://i.gifer.com/7TMH.gif","/icon/a.jpg","/icon/gg.png","/icon/sticker.webp","/icon/hamster.jpg"]
-memash = ["/icon/7TMH.webp","/icon/a.jpg","/icon/dwa.webp","/icon/sticker.webp","/icon/hamster.jpg"]
-jj = getRandomArrayElement(memash)
-j = getRandomArrayElement(memas)
-document.getElementById("hed3").style.backgroundImage = "url("+j+")";
-document.getElementById("hed2").style.backgroundImage = "url("+jj+")";
+    urlg = "https://i.gifer.com/"+maked()+".gif"
+    memas = ["/icon/7TMH.webp","https://i.gifer.com/19ps.gif","https://i.gifer.com/XKim.gif","https://i.gifer.com/y7.gif","https://i.gifer.com/7tDC.gif","https://i.gifer.com/4jcE.gif","https://i.gifer.com/VhdI.gif","https://i.gifer.com/PXkM.gif","https://i.gifer.com/7TMH.gif","/icon/a.jpg","/icon/gg.png","/icon/sticker.webp","/icon/hamster.jpg"]
+    memash = ["/icon/7TMH.webp","/icon/a.jpg","/icon/dwa.webp","/icon/sticker.webp","/icon/hamster.jpg"]
 
-if (j = jj) {
-jj = getRandomArrayElement(memash)
-j = getRandomArrayElement(memas)
-document.getElementById("hed3").style.backgroundImage = "url("+j+")";
-document.getElementById("hed2").style.backgroundImage = "url("+jj+")";
-}
+    jj = getRandomArrayElement(memash)
+    j = getRandomArrayElement(memas)
 
-document.getElementById("st2hed3").style.backgroundImage = "url("+j+")";
-document.getElementById("st2hed2").style.backgroundImage = "url("+jj+")";
+    document.getElementById("hed3").style.backgroundImage = "url("+j+")";
+    document.getElementById("hed2").style.backgroundImage = "url("+jj+")";
 
 
 
 
 
 
-str = ["str1","str2"]
-h = getRandomArrayElement(str)
-if (h == "str1") {
-    fstr1()
-}
-if (h == "str2") {
-    fstr2()
-}
+    if (j = jj) {
+    jj = getRandomArrayElement(memash)
+    j = getRandomArrayElement(memas)
+    document.getElementById("hed3").style.backgroundImage = "url("+j+")";
+    document.getElementById("hed2").style.backgroundImage = "url("+jj+")";
+    }
+
+    document.getElementById("st2hed3").style.backgroundImage = "url("+j+")";
+    document.getElementById("st2hed2").style.backgroundImage = "url("+jj+")";
+
+
+
+
+
+
+    str = ["str1","str2"]
+    h = getRandomArrayElement(str)
+    if (h == "str1") {
+        fstr1()
+    }
+    if (h == "str2") {
+        fstr2()
+    }
 
 }
 
@@ -551,7 +578,7 @@ function maked() {
 
 
 
-console.log("https://i.gifer.com/"+maked()+".gif")
+
 
 
 
@@ -704,6 +731,8 @@ if(document.getElementById("daw1").value == s) {
     }
 }
 
+
+
 function dvf() {
     document.location.replace("index.html")
 }
@@ -720,3 +749,5 @@ function cse() {
         alert("Отмена")
     }
 }
+
+    document.getElementById("dwc").style.display="block"
