@@ -28,12 +28,14 @@ document.getElementById("avatar").style.backgroundImage = "url("+localStorage.av
         document.getElementById("imgs1").style.display = "block"
         document.getElementById("imgs2").style.display = "block"        
         document.getElementById("imgs3").style.display = "block"
+        document.getElementById("imgs3").style.display = "block"
+        document.getElementById("struktur1").style.display = "none"
     localStorage.h = "true"
     }
         setInterval(function () {
             $("#nick").text(localStorage.getItem("dw"))
             document.getElementById("avatar").style.backgroundImage = "url("+localStorage.avatarurl+")";
-        
+            
         
         },400)
         function un() {
@@ -45,7 +47,7 @@ document.getElementById("avatar").style.backgroundImage = "url("+localStorage.av
             document.getElementById("avatar").style.display = "none"
             document.getElementById("struktur1").style.display = "none"
             document.getElementById("avata").style.backgroundImage = "url("+localStorage.avatarurl+")";
-            
+            document.getElementById("lolreg").style.display = "none" 
             },1000)
         }
         function Notcs() {
@@ -126,7 +128,7 @@ document.getElementById("avatar").style.backgroundImage = "url("+localStorage.av
     
    <!-- <div onclick="un()" id="undo"></div>-->
     
-    <div onclick="un()" id="awdf"><p onclick="dvf()" id="daw">&#8592;</p></div>
+    <img onclick="un()" id="awdf" src="/icon/undo.png">
     
 </body>
 </html>

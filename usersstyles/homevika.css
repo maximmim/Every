@@ -19,7 +19,13 @@
     left: 114px;
     display: none;
 }
-
+#seting {
+    position: absolute;
+    left: 47px;
+    top: 39px;
+    height: 58px;
+    width: 58px;
+}
 
 #bdialog3{
     position: absolute;
@@ -116,14 +122,19 @@ position: absolute;
 
 
 
+
 #avatar {
     position: absolute;
     left: 151px;
     top: 7px;
     width: 100px;
     height: 100px;
+    background-size: 100px 100px;
+    background-image: url("/icon/da.jpg");
     border-radius: 12px;
+    
 }
+
 #av {
     position: absolute;
     left: 25px;
@@ -239,12 +250,15 @@ position: absolute;
 }
 #avata {
     position: absolute;
-    width: 278px;
+    width: 358px;
     height: 300px;
-    left: 60px;
+    left: 30px;
     top: 194px;
     display: none;
+    background-size: 358px 300px ;
+    background-image: url("/icon/da.jpg");
     border-radius: 12px;
+    
 }
 #hed2 {
     
@@ -283,6 +297,20 @@ position: absolute;
     height: 62px;
 
 }
+.oa {
+    position: absolute;
+    color: rgb(225, 225, 225);
+    font-size: 50px;
+    display: block;
+    border-radius: 26px;
+    background-color: rgb(0, 0, 0);
+}
+#lolreg
+{
+    position: absolute;
+    left: 100px;
+}
+
 #hed3 {
     
     position: absolute;
@@ -300,13 +328,10 @@ position: absolute;
 
 #awdf {
     position: absolute;
-    top: 802px;
-    left: 5px;
-    height: 77px;
-    width: 406px;
-    border-radius: 25px;
-    background: rgb(190,190,190);
-background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%);
+    left: 148px;
+    bottom: 0px;
+    width: 91px;
+    height: 79px;
 }
 #daw {
     position: absolute;
@@ -314,4 +339,60 @@ background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(38,0,255,1) 74%
     top: -88px;
     font-size: 80px;
     color: rgb(255, 255, 255);
+}
+
+
+#regbut1 {
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+#daw1 {
+    position: absolute;
+    left: 24%;
+    top: 174px;
+    display: none;
+    width: 210px;
+    height: 35px;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+
+
+
+#imgs1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 243px;
+    left: -67px;
+    display: none;
+}
+
+
+#imgs2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 243px;
+    left: 47px;
+    display: none;
+}
+#imgs3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 243px;
+    left: 179px;
+    display: none;
 }

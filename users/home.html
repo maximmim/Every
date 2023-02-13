@@ -17,6 +17,24 @@
 
 <title>Every</title>
 <script>
+
+
+
+function setings() {
+        document.getElementById("daw1").style.display = "block"
+        document.getElementById("regbut1").style.display = "block"
+        document.getElementById("imgs1").style.display = "block"
+        document.getElementById("imgs2").style.display = "block"        
+        document.getElementById("imgs3").style.display = "block"
+        document.getElementById("imgs3").style.display = "block"
+    localStorage.h = "true"
+    document.getElementById("struktur1").style.display = "none"
+    }
+
+
+
+
+
 d = localStorage.d
 setTimeout(update,0)
 function update() {
@@ -42,7 +60,12 @@ document.getElementById('dgt').style.display = 'none'
 }
 
 
-
+setInterval(function () {
+            $("#nick").text(localStorage.getItem("dw"))
+            document.getElementById("avatar").style.backgroundImage = "url("+localStorage.avatarurl+")";
+        
+        
+        },400)
 /*
         setInterval(function () {
             $("#nick").text(localStorage.getItem("dw"))
@@ -52,12 +75,13 @@ document.getElementById('dgt').style.display = 'none'
             document.location.replace("/html/index.html")
         }
         function Cs() {
-            setTimeout(function () {
+        setTimeout(function () {
                 document.getElementById("avata").style.display = "block"
             document.getElementById("avatar").style.display = "none"
             document.getElementById("struktur1").style.display = "none"
+            document.getElementById("avata").style.backgroundImage = "url("+localStorage.avatarurl+")";
+            document.getElementById("lolreg").style.display = "none" 
             },1000)
-        
         }
         function Notcs() {
             
@@ -65,6 +89,63 @@ document.getElementById('dgt').style.display = 'none'
             document.getElementById("avata").style.display = "none"
             document.getElementById("avatar").style.display = "block"
         }
+
+
+        function startupavata() {
+            localStorage.avatarurl = document.getElementById('daw1').value
+            document.getElementById("avatar").style.backgroundImage = "url("+localStorage.avatarurl+")";  
+            document.getElementById("daw1").style.display = "none"
+        document.getElementById("regbut1").style.display = "none"
+        document.getElementById("imgs1").style.display = "none"
+        document.getElementById("imgs2").style.display = "none"        
+        document.getElementById("imgs3").style.display = "none"
+        }
+        
+
+
+        function jb1() {
+            document.getElementById("avatar").style.backgroundImage = "url("+"/icon/hamster.jpg"+")";  
+            localStorage.avatarurl = "/icon/hamster.jpg"
+
+            document.getElementById("daw1").style.display = "none"
+        document.getElementById("regbut1").style.display = "none"
+        document.getElementById("imgs1").style.display = "none"
+        document.getElementById("imgs2").style.display = "none"        
+        document.getElementById("imgs3").style.display = "none"
+        }
+        function jb2() {
+            document.getElementById("avatar").style.backgroundImage = "url("+"/icon/gg.png"+")";  
+            localStorage.avatarurl = "/icon/gg.png"
+
+            document.getElementById("daw1").style.display = "none"
+        document.getElementById("regbut1").style.display = "none"
+        document.getElementById("imgs1").style.display = "none"
+        document.getElementById("imgs2").style.display = "none"        
+        document.getElementById("imgs3").style.display = "none"
+        }
+        function jb3() {
+            document.getElementById("avatar").style.backgroundImage = "url("+"/icon/sticker.webp"+")";  
+            localStorage.avatarurl = "/icon/sticker.webp"
+
+            document.getElementById("daw1").style.display = "none"
+        document.getElementById("regbut1").style.display = "none"
+        document.getElementById("imgs1").style.display = "none"
+        document.getElementById("imgs2").style.display = "none"        
+        document.getElementById("imgs3").style.display = "none"
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
 </head>
 <body >
@@ -134,6 +215,14 @@ document.getElementById('struktur1').style.display = 'block'
   ">
 
 </div>
+<div id="lolreg">
+  <button id="regbut1" onclick="startupavata()" class="oa">Задати</button>
+  <input placeholder="Веди посиланя на аватар" id="daw1">
+  <img onclick="jb1()" src="/icon/hamster.jpg" id="imgs1">
+  <img onclick="jb2()" src="/icon/gg.png" id="imgs2">
+  <img onclick="jb3()" src="/icon/sticker.webp" id="imgs3">
+
+</div>
 <img src="/icon/like.png" id="adki" onclick="
 
 struktur1.style.display = 'none';
@@ -159,13 +248,13 @@ document.getElementById('adki').style.display = 'none'
 
 "> 
 
-
- <img class="u" id="avata" onclick="Notcs()" src="/icon/dar.png">
-  <img class="u" id="avatar" onclick="Cs()" src="/icon/dar.png">
+<img src="/icon/setings.png" onclick="setings()" id="seting"> 
+    <div class="u" id="avata" onclick="Notcs()"></div>
+    <div class="u" id="avatar" onclick="Cs()"></div>
     <h1 id="nick">Maxim</h1>
    <!-- <div onclick="un()" id="undo"></div>-->
     
-    <div onclick="un()" id="awdf"><p onclick="dvf()" id="daw">&#8592;</p></div>
+   <img onclick="un()" id="awdf" src="/icon/undo.png">
     
 </body>
 </html>
